@@ -8,17 +8,60 @@
 
 /* Begin PBXBuildFile section */
 		80E1C88C2BCA994F00B8A8DF /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C88B2BCA994F00B8A8DF /* iOSApp.swift */; };
-		80E1C88E2BCA994F00B8A8DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C88D2BCA994F00B8A8DF /* ContentView.swift */; };
 		80E1C8902BCA995200B8A8DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E1C88F2BCA995200B8A8DF /* Assets.xcassets */; };
 		80E1C8932BCA995200B8A8DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E1C8922BCA995200B8A8DF /* Preview Assets.xcassets */; };
+		DA2251C12BCB0C1A00CECEB9 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2251C02BCB0C1A00CECEB9 /* TabBarView.swift */; };
+		DA2251C62BCB0C2900CECEB9 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2251C22BCB0C2900CECEB9 /* Activity.swift */; };
+		DA2251C72BCB0C2900CECEB9 /* ActivityPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2251C32BCB0C2900CECEB9 /* ActivityPreview.swift */; };
+		DA2251C82BCB0C2900CECEB9 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2251C42BCB0C2900CECEB9 /* ActivityView.swift */; };
+		DA2251CE2BCB0C4400CECEB9 /* +Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2251CC2BCB0C4400CECEB9 /* +Ext.swift */; };
+		DA2251D32BCB0C6000CECEB9 /* AbstractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2251CF2BCB0C6000CECEB9 /* AbstractionView.swift */; };
+		DA2251D42BCB0C6000CECEB9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2251D02BCB0C6000CECEB9 /* LoginView.swift */; };
+		DA2251D52BCB0C6000CECEB9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2251D12BCB0C6000CECEB9 /* Settings.swift */; };
+		DA2251DE2BCB0C7400CECEB9 /* AaveDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2251DD2BCB0C7400CECEB9 /* AaveDashboard.swift */; };
+		DA2251DF2BCB0C7400CECEB9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2251DC2BCB0C7400CECEB9 /* ProfileView.swift */; };
+		DA22520C2BCB0C8700CECEB9 /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2252022BCB0C8700CECEB9 /* MemberView.swift */; };
+		DA22520D2BCB0C8700CECEB9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2251FD2BCB0C8700CECEB9 /* HomeView.swift */; };
+		DA22520E2BCB0C8700CECEB9 /* GroupOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22520B2BCB0C8700CECEB9 /* GroupOverview.swift */; };
+		DA22520F2BCB0C8700CECEB9 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2251FF2BCB0C8700CECEB9 /* Expense.swift */; };
+		DA2252102BCB0C8700CECEB9 /* BorrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2252062BCB0C8700CECEB9 /* BorrowView.swift */; };
+		DA2252112BCB0C8700CECEB9 /* GroupAddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22520A2BCB0C8700CECEB9 /* GroupAddingView.swift */; };
+		DA2252122BCB0C8700CECEB9 /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2252082BCB0C8700CECEB9 /* GroupViewModel.swift */; };
+		DA2252132BCB0C8700CECEB9 /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2252002BCB0C8700CECEB9 /* ExpenseView.swift */; };
+		DA2252142BCB0C8700CECEB9 /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2252072BCB0C8700CECEB9 /* PayView.swift */; };
+		DA2252152BCB0C8700CECEB9 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2252032BCB0C8700CECEB9 /* Member.swift */; };
+		DA2252162BCB0C8700CECEB9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2252052BCB0C8700CECEB9 /* Group.swift */; };
+		DA2252172BCB0C8700CECEB9 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2252092BCB0C8700CECEB9 /* GroupView.swift */; };
+		DA22521A2BCB0D4600CECEB9 /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = DA2252192BCB0D4600CECEB9 /* metamask-ios-sdk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80E1C8882BCA994F00B8A8DF /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E1C88B2BCA994F00B8A8DF /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
-		80E1C88D2BCA994F00B8A8DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		80E1C88F2BCA995200B8A8DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80E1C8922BCA995200B8A8DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA2251C02BCB0C1A00CECEB9 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		DA2251C22BCB0C2900CECEB9 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		DA2251C32BCB0C2900CECEB9 /* ActivityPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityPreview.swift; sourceTree = "<group>"; };
+		DA2251C42BCB0C2900CECEB9 /* ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		DA2251CC2BCB0C4400CECEB9 /* +Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "+Ext.swift"; sourceTree = "<group>"; };
+		DA2251CF2BCB0C6000CECEB9 /* AbstractionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractionView.swift; sourceTree = "<group>"; };
+		DA2251D02BCB0C6000CECEB9 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DA2251D12BCB0C6000CECEB9 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		DA2251DC2BCB0C7400CECEB9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DA2251DD2BCB0C7400CECEB9 /* AaveDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AaveDashboard.swift; sourceTree = "<group>"; };
+		DA2251FD2BCB0C8700CECEB9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DA2251FF2BCB0C8700CECEB9 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		DA2252002BCB0C8700CECEB9 /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
+		DA2252022BCB0C8700CECEB9 /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
+		DA2252032BCB0C8700CECEB9 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		DA2252052BCB0C8700CECEB9 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		DA2252062BCB0C8700CECEB9 /* BorrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorrowView.swift; sourceTree = "<group>"; };
+		DA2252072BCB0C8700CECEB9 /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
+		DA2252082BCB0C8700CECEB9 /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
+		DA2252092BCB0C8700CECEB9 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+		DA22520A2BCB0C8700CECEB9 /* GroupAddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddingView.swift; sourceTree = "<group>"; };
+		DA22520B2BCB0C8700CECEB9 /* GroupOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupOverview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA22521A2BCB0D4600CECEB9 /* metamask-ios-sdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +95,13 @@
 		80E1C88A2BCA994F00B8A8DF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DA2251C52BCB0C2900CECEB9 /* Activity */,
+				DA2251CD2BCB0C4400CECEB9 /* Ext */,
+				DA2251FC2BCB0C8700CECEB9 /* Home */,
+				DA2251D22BCB0C6000CECEB9 /* Login */,
+				DA2251DB2BCB0C7400CECEB9 /* Profile */,
 				80E1C88B2BCA994F00B8A8DF /* iOSApp.swift */,
-				80E1C88D2BCA994F00B8A8DF /* ContentView.swift */,
+				DA2251C02BCB0C1A00CECEB9 /* TabBarView.swift */,
 				80E1C88F2BCA995200B8A8DF /* Assets.xcassets */,
 				80E1C8912BCA995200B8A8DF /* Preview Content */,
 			);
@@ -65,6 +114,89 @@
 				80E1C8922BCA995200B8A8DF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA2251C52BCB0C2900CECEB9 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				DA2251C22BCB0C2900CECEB9 /* Activity.swift */,
+				DA2251C32BCB0C2900CECEB9 /* ActivityPreview.swift */,
+				DA2251C42BCB0C2900CECEB9 /* ActivityView.swift */,
+			);
+			name = Activity;
+			path = "../../../../lfgho/LFGHO-Mobile/LFGHO/Activity";
+			sourceTree = "<group>";
+		};
+		DA2251CD2BCB0C4400CECEB9 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				DA2251CC2BCB0C4400CECEB9 /* +Ext.swift */,
+			);
+			name = Ext;
+			path = "../../../../lfgho/LFGHO-Mobile/LFGHO/Ext";
+			sourceTree = "<group>";
+		};
+		DA2251D22BCB0C6000CECEB9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DA2251CF2BCB0C6000CECEB9 /* AbstractionView.swift */,
+				DA2251D02BCB0C6000CECEB9 /* LoginView.swift */,
+				DA2251D12BCB0C6000CECEB9 /* Settings.swift */,
+			);
+			name = Login;
+			path = "../../../../lfgho/LFGHO-Mobile/LFGHO/Login";
+			sourceTree = "<group>";
+		};
+		DA2251DB2BCB0C7400CECEB9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DA2251DD2BCB0C7400CECEB9 /* AaveDashboard.swift */,
+				DA2251DC2BCB0C7400CECEB9 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DA2251FC2BCB0C8700CECEB9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DA2251FE2BCB0C8700CECEB9 /* Expenses */,
+				DA2252042BCB0C8700CECEB9 /* Group */,
+				DA2252012BCB0C8700CECEB9 /* Members */,
+				DA2251FD2BCB0C8700CECEB9 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DA2251FE2BCB0C8700CECEB9 /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				DA2251FF2BCB0C8700CECEB9 /* Expense.swift */,
+				DA2252002BCB0C8700CECEB9 /* ExpenseView.swift */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
+		DA2252012BCB0C8700CECEB9 /* Members */ = {
+			isa = PBXGroup;
+			children = (
+				DA2252032BCB0C8700CECEB9 /* Member.swift */,
+				DA2252022BCB0C8700CECEB9 /* MemberView.swift */,
+			);
+			path = Members;
+			sourceTree = "<group>";
+		};
+		DA2252042BCB0C8700CECEB9 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				DA2252062BCB0C8700CECEB9 /* BorrowView.swift */,
+				DA2252052BCB0C8700CECEB9 /* Group.swift */,
+				DA22520A2BCB0C8700CECEB9 /* GroupAddingView.swift */,
+				DA22520B2BCB0C8700CECEB9 /* GroupOverview.swift */,
+				DA2252092BCB0C8700CECEB9 /* GroupView.swift */,
+				DA2252082BCB0C8700CECEB9 /* GroupViewModel.swift */,
+				DA2252072BCB0C8700CECEB9 /* PayView.swift */,
+			);
+			path = Group;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +215,9 @@
 			dependencies = (
 			);
 			name = iOS;
+			packageProductDependencies = (
+				DA2252192BCB0D4600CECEB9 /* metamask-ios-sdk */,
+			);
 			productName = iOS;
 			productReference = 80E1C8882BCA994F00B8A8DF /* iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 80E1C87F2BCA994F00B8A8DF;
+			packageReferences = (
+				DA2252182BCB0D4600CECEB9 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
+			);
 			productRefGroup = 80E1C8892BCA994F00B8A8DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +275,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80E1C88E2BCA994F00B8A8DF /* ContentView.swift in Sources */,
+				DA22520D2BCB0C8700CECEB9 /* HomeView.swift in Sources */,
+				DA2251CE2BCB0C4400CECEB9 /* +Ext.swift in Sources */,
+				DA2251C12BCB0C1A00CECEB9 /* TabBarView.swift in Sources */,
+				DA2251DE2BCB0C7400CECEB9 /* AaveDashboard.swift in Sources */,
+				DA2251D42BCB0C6000CECEB9 /* LoginView.swift in Sources */,
+				DA22520E2BCB0C8700CECEB9 /* GroupOverview.swift in Sources */,
+				DA2252162BCB0C8700CECEB9 /* Group.swift in Sources */,
+				DA2252102BCB0C8700CECEB9 /* BorrowView.swift in Sources */,
+				DA2251D52BCB0C6000CECEB9 /* Settings.swift in Sources */,
+				DA2251C72BCB0C2900CECEB9 /* ActivityPreview.swift in Sources */,
+				DA22520C2BCB0C8700CECEB9 /* MemberView.swift in Sources */,
+				DA2252122BCB0C8700CECEB9 /* GroupViewModel.swift in Sources */,
+				DA2251C62BCB0C2900CECEB9 /* Activity.swift in Sources */,
+				DA2251D32BCB0C6000CECEB9 /* AbstractionView.swift in Sources */,
+				DA22520F2BCB0C8700CECEB9 /* Expense.swift in Sources */,
+				DA2252132BCB0C8700CECEB9 /* ExpenseView.swift in Sources */,
+				DA2252142BCB0C8700CECEB9 /* PayView.swift in Sources */,
 				80E1C88C2BCA994F00B8A8DF /* iOSApp.swift in Sources */,
+				DA2252152BCB0C8700CECEB9 /* Member.swift in Sources */,
+				DA2251DF2BCB0C7400CECEB9 /* ProfileView.swift in Sources */,
+				DA2251C82BCB0C2900CECEB9 /* ActivityView.swift in Sources */,
+				DA2252172BCB0C8700CECEB9 /* GroupView.swift in Sources */,
+				DA2252112BCB0C8700CECEB9 /* GroupAddingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +431,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = UEA5XWCYV3;
+				DEVELOPMENT_TEAM = 288ZUH88HD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID required";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,9 +461,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = UEA5XWCYV3;
+				DEVELOPMENT_TEAM = 288ZUH88HD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID required";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +505,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA2252182BCB0D4600CECEB9 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MetaMask/metamask-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA2252192BCB0D4600CECEB9 /* metamask-ios-sdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA2252182BCB0D4600CECEB9 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */;
+			productName = "metamask-ios-sdk";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 80E1C8802BCA994F00B8A8DF /* Project object */;
 }
