@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80C1D6B32BCB1FD70035206A /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 80C1D6B22BCB1FD70035206A /* metamask-ios-sdk */; };
 		80E1C8C32BCB192000B8A8DF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8BD2BCB192000B8A8DF /* Endpoints.swift */; };
 		80E1C8C42BCB192000B8A8DF /* APICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8BE2BCB192000B8A8DF /* APICoordinator.swift */; };
 		80E1C8C52BCB192000B8A8DF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8C02BCB192000B8A8DF /* APIError.swift */; };
@@ -43,7 +44,6 @@
 		DA7E9BE62BCB1C3C0006EA5E /* ActivityPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BD02BCB1C3C0006EA5E /* ActivityPreview.swift */; };
 		DA7E9BE72BCB1C3C0006EA5E /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BD12BCB1C3C0006EA5E /* ActivityView.swift */; };
 		DA7E9BE92BCB1C460006EA5E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BE82BCB1C460006EA5E /* TabBarView.swift */; };
-		DA7E9BEC2BCB1C780006EA5E /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = DA7E9BEB2BCB1C780006EA5E /* metamask-ios-sdk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA7E9BEC2BCB1C780006EA5E /* metamask-ios-sdk in Frameworks */,
+				80C1D6B32BCB1FD70035206A /* metamask-ios-sdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +278,7 @@
 			);
 			name = RippleX;
 			packageProductDependencies = (
-				DA7E9BEB2BCB1C780006EA5E /* metamask-ios-sdk */,
+				80C1D6B22BCB1FD70035206A /* metamask-ios-sdk */,
 			);
 			productName = RippleX;
 			productReference = DA7E9BA52BCB16010006EA5E /* RippleX.app */;
@@ -309,7 +309,7 @@
 			);
 			mainGroup = DA7E9B9C2BCB16010006EA5E;
 			packageReferences = (
-				DA7E9BEA2BCB1C780006EA5E /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
+				80C1D6B12BCB1FD70035206A /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
 			);
 			productRefGroup = DA7E9BA62BCB16010006EA5E /* Products */;
 			projectDirPath = "";
@@ -578,7 +578,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DA7E9BEA2BCB1C780006EA5E /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */ = {
+		80C1D6B12BCB1FD70035206A /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MetaMask/metamask-ios-sdk.git";
 			requirement = {
@@ -589,9 +589,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DA7E9BEB2BCB1C780006EA5E /* metamask-ios-sdk */ = {
+		80C1D6B22BCB1FD70035206A /* metamask-ios-sdk */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA7E9BEA2BCB1C780006EA5E /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */;
+			package = 80C1D6B12BCB1FD70035206A /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */;
 			productName = "metamask-ios-sdk";
 		};
 /* End XCSwiftPackageProductDependency section */

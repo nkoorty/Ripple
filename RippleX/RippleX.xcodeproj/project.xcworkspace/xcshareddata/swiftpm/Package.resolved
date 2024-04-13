@@ -1,5 +1,4 @@
 {
-  "originHash" : "bacf8999d318183646d50845dca57ca9b239014ef7d04dff85bcad2125617127",
   "pins" : [
     {
       "identity" : "metamask-ios-sdk",
@@ -29,5 +28,5 @@
       }
     }
   ],
-  "version" : 3
+  "version" : 2
 }

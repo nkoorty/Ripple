@@ -17,8 +17,8 @@ final class PaymentsManager: PaymentsManagerProtocol {
         let group =  PaymentGroup(users: users)
         
         do {
-//            let response: PaymentResponse = try await apiCoordinator.request(endpoint: Endpoints.createGroup, method: .POST(data: group))
-//            print(response)
+            let response: PaymentResponse = try await apiCoordinator.request(endpoint: Endpoints.createGroup, method: .POST(data: group))
+            print(response)
         } catch {
             print(error)
         }
@@ -28,8 +28,8 @@ final class PaymentsManager: PaymentsManagerProtocol {
         let payment = Payment(owner: owner, payees: payees)
         
         do {
-//            let response: PaymentResponse = try await apiCoordinator.request(endpoint: Endpoints.createPaymentSplit, method: .POST(data: payment))
-//            print(response)
+            let response: PaymentResponse = try await apiCoordinator.request(endpoint: Endpoints.createPaymentSplit, method: .POST(data: payment))
+            print(response)
         } catch {
             print(error)
         }
