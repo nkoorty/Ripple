@@ -21,6 +21,29 @@
 		DA7E9BAB2BCB16010006EA5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BAA2BCB16010006EA5E /* ContentView.swift */; };
 		DA7E9BAD2BCB16020006EA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7E9BAC2BCB16020006EA5E /* Assets.xcassets */; };
 		DA7E9BB02BCB16020006EA5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7E9BAF2BCB16020006EA5E /* Preview Assets.xcassets */; };
+		DA7E9BD32BCB1C3C0006EA5E /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BB62BCB1C3B0006EA5E /* Expense.swift */; };
+		DA7E9BD42BCB1C3C0006EA5E /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BB72BCB1C3B0006EA5E /* ExpenseView.swift */; };
+		DA7E9BD52BCB1C3C0006EA5E /* BorrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BB92BCB1C3B0006EA5E /* BorrowView.swift */; };
+		DA7E9BD62BCB1C3C0006EA5E /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BBA2BCB1C3B0006EA5E /* Group.swift */; };
+		DA7E9BD72BCB1C3C0006EA5E /* GroupAddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BBB2BCB1C3B0006EA5E /* GroupAddingView.swift */; };
+		DA7E9BD82BCB1C3C0006EA5E /* GroupOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BBC2BCB1C3B0006EA5E /* GroupOverview.swift */; };
+		DA7E9BD92BCB1C3C0006EA5E /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BBD2BCB1C3B0006EA5E /* GroupView.swift */; };
+		DA7E9BDA2BCB1C3C0006EA5E /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BBE2BCB1C3B0006EA5E /* GroupViewModel.swift */; };
+		DA7E9BDB2BCB1C3C0006EA5E /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BBF2BCB1C3B0006EA5E /* PayView.swift */; };
+		DA7E9BDC2BCB1C3C0006EA5E /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BC12BCB1C3B0006EA5E /* Member.swift */; };
+		DA7E9BDD2BCB1C3C0006EA5E /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BC22BCB1C3B0006EA5E /* MemberView.swift */; };
+		DA7E9BDE2BCB1C3C0006EA5E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BC42BCB1C3B0006EA5E /* HomeView.swift */; };
+		DA7E9BDF2BCB1C3C0006EA5E /* AbstractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BC62BCB1C3B0006EA5E /* AbstractionView.swift */; };
+		DA7E9BE02BCB1C3C0006EA5E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BC72BCB1C3B0006EA5E /* LoginView.swift */; };
+		DA7E9BE12BCB1C3C0006EA5E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BC82BCB1C3B0006EA5E /* Settings.swift */; };
+		DA7E9BE22BCB1C3C0006EA5E /* AaveDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BCA2BCB1C3B0006EA5E /* AaveDashboard.swift */; };
+		DA7E9BE32BCB1C3C0006EA5E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BCB2BCB1C3B0006EA5E /* ProfileView.swift */; };
+		DA7E9BE42BCB1C3C0006EA5E /* +Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BCD2BCB1C3B0006EA5E /* +Ext.swift */; };
+		DA7E9BE52BCB1C3C0006EA5E /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BCF2BCB1C3C0006EA5E /* Activity.swift */; };
+		DA7E9BE62BCB1C3C0006EA5E /* ActivityPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BD02BCB1C3C0006EA5E /* ActivityPreview.swift */; };
+		DA7E9BE72BCB1C3C0006EA5E /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BD12BCB1C3C0006EA5E /* ActivityView.swift */; };
+		DA7E9BE92BCB1C460006EA5E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BE82BCB1C460006EA5E /* TabBarView.swift */; };
+		DA7E9BEC2BCB1C780006EA5E /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = DA7E9BEB2BCB1C780006EA5E /* metamask-ios-sdk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +62,28 @@
 		DA7E9BAA2BCB16010006EA5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA7E9BAC2BCB16020006EA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7E9BAF2BCB16020006EA5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA7E9BB62BCB1C3B0006EA5E /* Expense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		DA7E9BB72BCB1C3B0006EA5E /* ExpenseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
+		DA7E9BB92BCB1C3B0006EA5E /* BorrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowView.swift; sourceTree = "<group>"; };
+		DA7E9BBA2BCB1C3B0006EA5E /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		DA7E9BBB2BCB1C3B0006EA5E /* GroupAddingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupAddingView.swift; sourceTree = "<group>"; };
+		DA7E9BBC2BCB1C3B0006EA5E /* GroupOverview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupOverview.swift; sourceTree = "<group>"; };
+		DA7E9BBD2BCB1C3B0006EA5E /* GroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+		DA7E9BBE2BCB1C3B0006EA5E /* GroupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
+		DA7E9BBF2BCB1C3B0006EA5E /* PayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
+		DA7E9BC12BCB1C3B0006EA5E /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		DA7E9BC22BCB1C3B0006EA5E /* MemberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
+		DA7E9BC42BCB1C3B0006EA5E /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DA7E9BC62BCB1C3B0006EA5E /* AbstractionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractionView.swift; sourceTree = "<group>"; };
+		DA7E9BC72BCB1C3B0006EA5E /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DA7E9BC82BCB1C3B0006EA5E /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		DA7E9BCA2BCB1C3B0006EA5E /* AaveDashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AaveDashboard.swift; sourceTree = "<group>"; };
+		DA7E9BCB2BCB1C3B0006EA5E /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DA7E9BCD2BCB1C3B0006EA5E /* +Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "+Ext.swift"; sourceTree = "<group>"; };
+		DA7E9BCF2BCB1C3C0006EA5E /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		DA7E9BD02BCB1C3C0006EA5E /* ActivityPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityPreview.swift; sourceTree = "<group>"; };
+		DA7E9BD12BCB1C3C0006EA5E /* ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		DA7E9BE82BCB1C460006EA5E /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7E9BEC2BCB1C780006EA5E /* metamask-ios-sdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +159,13 @@
 			children = (
 				DA7E9BA82BCB16010006EA5E /* RippleXApp.swift */,
 				DA7E9BAA2BCB16010006EA5E /* ContentView.swift */,
+				DA7E9BE82BCB1C460006EA5E /* TabBarView.swift */,
 				DA7E9BAC2BCB16020006EA5E /* Assets.xcassets */,
+				DA7E9BD22BCB1C3C0006EA5E /* Activity */,
+				DA7E9BCE2BCB1C3B0006EA5E /* Ext */,
+				DA7E9BC52BCB1C3B0006EA5E /* Home */,
+				DA7E9BC92BCB1C3B0006EA5E /* Login */,
+				DA7E9BCC2BCB1C3B0006EA5E /* Profile */,
 				80E1C8C82BCB192800B8A8DF /* PaymentsManager */,
 				80E1C8BC2BCB192000B8A8DF /* API */,
 				DA7E9BAE2BCB16020006EA5E /* Preview Content */,
@@ -127,6 +179,86 @@
 				DA7E9BAF2BCB16020006EA5E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA7E9BB82BCB1C3B0006EA5E /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E9BB62BCB1C3B0006EA5E /* Expense.swift */,
+				DA7E9BB72BCB1C3B0006EA5E /* ExpenseView.swift */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
+		DA7E9BC02BCB1C3B0006EA5E /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E9BB92BCB1C3B0006EA5E /* BorrowView.swift */,
+				DA7E9BBA2BCB1C3B0006EA5E /* Group.swift */,
+				DA7E9BBB2BCB1C3B0006EA5E /* GroupAddingView.swift */,
+				DA7E9BBC2BCB1C3B0006EA5E /* GroupOverview.swift */,
+				DA7E9BBD2BCB1C3B0006EA5E /* GroupView.swift */,
+				DA7E9BBE2BCB1C3B0006EA5E /* GroupViewModel.swift */,
+				DA7E9BBF2BCB1C3B0006EA5E /* PayView.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		DA7E9BC32BCB1C3B0006EA5E /* Members */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E9BC12BCB1C3B0006EA5E /* Member.swift */,
+				DA7E9BC22BCB1C3B0006EA5E /* MemberView.swift */,
+			);
+			path = Members;
+			sourceTree = "<group>";
+		};
+		DA7E9BC52BCB1C3B0006EA5E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E9BB82BCB1C3B0006EA5E /* Expenses */,
+				DA7E9BC02BCB1C3B0006EA5E /* Group */,
+				DA7E9BC32BCB1C3B0006EA5E /* Members */,
+				DA7E9BC42BCB1C3B0006EA5E /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DA7E9BC92BCB1C3B0006EA5E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E9BC62BCB1C3B0006EA5E /* AbstractionView.swift */,
+				DA7E9BC72BCB1C3B0006EA5E /* LoginView.swift */,
+				DA7E9BC82BCB1C3B0006EA5E /* Settings.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DA7E9BCC2BCB1C3B0006EA5E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E9BCA2BCB1C3B0006EA5E /* AaveDashboard.swift */,
+				DA7E9BCB2BCB1C3B0006EA5E /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DA7E9BCE2BCB1C3B0006EA5E /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E9BCD2BCB1C3B0006EA5E /* +Ext.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		DA7E9BD22BCB1C3C0006EA5E /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E9BCF2BCB1C3C0006EA5E /* Activity.swift */,
+				DA7E9BD02BCB1C3C0006EA5E /* ActivityPreview.swift */,
+				DA7E9BD12BCB1C3C0006EA5E /* ActivityView.swift */,
+			);
+			path = Activity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +277,9 @@
 			dependencies = (
 			);
 			name = RippleX;
+			packageProductDependencies = (
+				DA7E9BEB2BCB1C780006EA5E /* metamask-ios-sdk */,
+			);
 			productName = RippleX;
 			productReference = DA7E9BA52BCB16010006EA5E /* RippleX.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +308,9 @@
 				Base,
 			);
 			mainGroup = DA7E9B9C2BCB16010006EA5E;
+			packageReferences = (
+				DA7E9BEA2BCB1C780006EA5E /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
+			);
 			productRefGroup = DA7E9BA62BCB16010006EA5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -199,18 +337,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7E9BE92BCB1C460006EA5E /* TabBarView.swift in Sources */,
+				DA7E9BDB2BCB1C3C0006EA5E /* PayView.swift in Sources */,
 				DA7E9BAB2BCB16010006EA5E /* ContentView.swift in Sources */,
+				DA7E9BE52BCB1C3C0006EA5E /* Activity.swift in Sources */,
+				DA7E9BD52BCB1C3C0006EA5E /* BorrowView.swift in Sources */,
+				DA7E9BE22BCB1C3C0006EA5E /* AaveDashboard.swift in Sources */,
 				80E1C8D32BCB192800B8A8DF /* PaymentsView.swift in Sources */,
+				DA7E9BD62BCB1C3C0006EA5E /* Group.swift in Sources */,
+				DA7E9BDA2BCB1C3C0006EA5E /* GroupViewModel.swift in Sources */,
 				80E1C8C42BCB192000B8A8DF /* APICoordinator.swift in Sources */,
+				DA7E9BDF2BCB1C3C0006EA5E /* AbstractionView.swift in Sources */,
+				DA7E9BD42BCB1C3C0006EA5E /* ExpenseView.swift in Sources */,
+				DA7E9BE72BCB1C3C0006EA5E /* ActivityView.swift in Sources */,
 				80E1C8C72BCB192000B8A8DF /* HTTPMethod.swift in Sources */,
+				DA7E9BE32BCB1C3C0006EA5E /* ProfileView.swift in Sources */,
+				DA7E9BE02BCB1C3C0006EA5E /* LoginView.swift in Sources */,
 				80E1C8C32BCB192000B8A8DF /* Endpoints.swift in Sources */,
 				80E1C8D22BCB192800B8A8DF /* PaymentGroup.swift in Sources */,
+				DA7E9BD72BCB1C3C0006EA5E /* GroupAddingView.swift in Sources */,
 				80E1C8D12BCB192800B8A8DF /* Payment.swift in Sources */,
 				80E1C8CF2BCB192800B8A8DF /* PaymentsManager.swift in Sources */,
 				80E1C8C52BCB192000B8A8DF /* APIError.swift in Sources */,
+				DA7E9BDD2BCB1C3C0006EA5E /* MemberView.swift in Sources */,
 				DA7E9BA92BCB16010006EA5E /* RippleXApp.swift in Sources */,
+				DA7E9BE42BCB1C3C0006EA5E /* +Ext.swift in Sources */,
+				DA7E9BD82BCB1C3C0006EA5E /* GroupOverview.swift in Sources */,
 				80E1C8D02BCB192800B8A8DF /* PaymentResponse.swift in Sources */,
+				DA7E9BD32BCB1C3C0006EA5E /* Expense.swift in Sources */,
+				DA7E9BD92BCB1C3C0006EA5E /* GroupView.swift in Sources */,
+				DA7E9BDE2BCB1C3C0006EA5E /* HomeView.swift in Sources */,
+				DA7E9BE12BCB1C3C0006EA5E /* Settings.swift in Sources */,
 				80E1C8C62BCB192000B8A8DF /* APIMethod.swift in Sources */,
+				DA7E9BDC2BCB1C3C0006EA5E /* Member.swift in Sources */,
+				DA7E9BE62BCB1C3C0006EA5E /* ActivityPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +576,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA7E9BEA2BCB1C780006EA5E /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MetaMask/metamask-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA7E9BEB2BCB1C780006EA5E /* metamask-ios-sdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA7E9BEA2BCB1C780006EA5E /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */;
+			productName = "metamask-ios-sdk";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA7E9B9D2BCB16010006EA5E /* Project object */;
 }

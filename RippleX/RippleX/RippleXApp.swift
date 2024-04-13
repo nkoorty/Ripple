@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct RippleXApp: App {
+    @AppStorage("signin") var isSignedIn = false
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
+                .preferredColorScheme(.dark)
+                .fullScreenCover(isPresented: $isSignedIn, content: {
+                    TabBarView()
+                        .preferredColorScheme(.dark)
+                })
         }
     }
 }
