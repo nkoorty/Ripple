@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80C1D6B32BCB1FD70035206A /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 80C1D6B22BCB1FD70035206A /* metamask-ios-sdk */; };
 		80E1C8C32BCB192000B8A8DF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8BD2BCB192000B8A8DF /* Endpoints.swift */; };
 		80E1C8C42BCB192000B8A8DF /* APICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8BE2BCB192000B8A8DF /* APICoordinator.swift */; };
 		80E1C8C52BCB192000B8A8DF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8C02BCB192000B8A8DF /* APIError.swift */; };
