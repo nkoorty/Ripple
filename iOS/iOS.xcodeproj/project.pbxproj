@@ -11,6 +11,11 @@
 		80E1C88E2BCA994F00B8A8DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C88D2BCA994F00B8A8DF /* ContentView.swift */; };
 		80E1C8902BCA995200B8A8DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E1C88F2BCA995200B8A8DF /* Assets.xcassets */; };
 		80E1C8932BCA995200B8A8DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E1C8922BCA995200B8A8DF /* Preview Assets.xcassets */; };
+		80E1C89B2BCAB7F200B8A8DF /* APICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C89A2BCAB7F200B8A8DF /* APICoordinator.swift */; };
+		80E1C89E2BCAB84700B8A8DF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C89D2BCAB84700B8A8DF /* HTTPMethod.swift */; };
+		80E1C8A02BCAB85600B8A8DF /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C89F2BCAB85600B8A8DF /* APIMethod.swift */; };
+		80E1C8A22BCAB86400B8A8DF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8A12BCAB86400B8A8DF /* APIError.swift */; };
+		80E1C8A42BCAB88200B8A8DF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8A32BCAB88200B8A8DF /* Endpoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		80E1C88D2BCA994F00B8A8DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		80E1C88F2BCA995200B8A8DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80E1C8922BCA995200B8A8DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		80E1C89A2BCAB7F200B8A8DF /* APICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICoordinator.swift; sourceTree = "<group>"; };
+		80E1C89D2BCAB84700B8A8DF /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		80E1C89F2BCAB85600B8A8DF /* APIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
+		80E1C8A12BCAB86400B8A8DF /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		80E1C8A32BCAB88200B8A8DF /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,7 @@
 			children = (
 				80E1C88B2BCA994F00B8A8DF /* iOSApp.swift */,
 				80E1C88D2BCA994F00B8A8DF /* ContentView.swift */,
+				80E1C8992BCAB72F00B8A8DF /* API */,
 				80E1C88F2BCA995200B8A8DF /* Assets.xcassets */,
 				80E1C8912BCA995200B8A8DF /* Preview Content */,
 			);
@@ -65,6 +76,26 @@
 				80E1C8922BCA995200B8A8DF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		80E1C8992BCAB72F00B8A8DF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				80E1C89A2BCAB7F200B8A8DF /* APICoordinator.swift */,
+				80E1C8A32BCAB88200B8A8DF /* Endpoints.swift */,
+				80E1C89C2BCAB83900B8A8DF /* Model */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		80E1C89C2BCAB83900B8A8DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80E1C89D2BCAB84700B8A8DF /* HTTPMethod.swift */,
+				80E1C89F2BCAB85600B8A8DF /* APIMethod.swift */,
+				80E1C8A12BCAB86400B8A8DF /* APIError.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E1C89E2BCAB84700B8A8DF /* HTTPMethod.swift in Sources */,
+				80E1C8A02BCAB85600B8A8DF /* APIMethod.swift in Sources */,
+				80E1C89B2BCAB7F200B8A8DF /* APICoordinator.swift in Sources */,
+				80E1C8A42BCAB88200B8A8DF /* Endpoints.swift in Sources */,
 				80E1C88E2BCA994F00B8A8DF /* ContentView.swift in Sources */,
 				80E1C88C2BCA994F00B8A8DF /* iOSApp.swift in Sources */,
+				80E1C8A22BCAB86400B8A8DF /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

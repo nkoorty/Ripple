@@ -22,3 +22,18 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+struct Payment {
+    var userPrivateKey: String
+    var itemAmount: Double
+    var item: String
+    var itemVendorPublicKey: String
+    var duration: Int
+    var interval: Int
+}
+
+/*
+interval = daily, weekly, monthly
+duration(in days) = 30
+ */
+
