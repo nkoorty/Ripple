@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80E1C8C32BCB192000B8A8DF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8BD2BCB192000B8A8DF /* Endpoints.swift */; };
+		80E1C8C42BCB192000B8A8DF /* APICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8BE2BCB192000B8A8DF /* APICoordinator.swift */; };
+		80E1C8C52BCB192000B8A8DF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8C02BCB192000B8A8DF /* APIError.swift */; };
+		80E1C8C62BCB192000B8A8DF /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8C12BCB192000B8A8DF /* APIMethod.swift */; };
+		80E1C8C72BCB192000B8A8DF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8C22BCB192000B8A8DF /* HTTPMethod.swift */; };
+		80E1C8CF2BCB192800B8A8DF /* PaymentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8C92BCB192800B8A8DF /* PaymentsManager.swift */; };
+		80E1C8D02BCB192800B8A8DF /* PaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8CB2BCB192800B8A8DF /* PaymentResponse.swift */; };
+		80E1C8D12BCB192800B8A8DF /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8CC2BCB192800B8A8DF /* Payment.swift */; };
+		80E1C8D22BCB192800B8A8DF /* PaymentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8CD2BCB192800B8A8DF /* PaymentGroup.swift */; };
+		80E1C8D32BCB192800B8A8DF /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8CE2BCB192800B8A8DF /* PaymentsView.swift */; };
 		DA7E9BA92BCB16010006EA5E /* RippleXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BA82BCB16010006EA5E /* RippleXApp.swift */; };
 		DA7E9BAB2BCB16010006EA5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BAA2BCB16010006EA5E /* ContentView.swift */; };
 		DA7E9BAD2BCB16020006EA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7E9BAC2BCB16020006EA5E /* Assets.xcassets */; };
@@ -14,6 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80E1C8BD2BCB192000B8A8DF /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		80E1C8BE2BCB192000B8A8DF /* APICoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICoordinator.swift; sourceTree = "<group>"; };
+		80E1C8C02BCB192000B8A8DF /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		80E1C8C12BCB192000B8A8DF /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
+		80E1C8C22BCB192000B8A8DF /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		80E1C8C92BCB192800B8A8DF /* PaymentsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsManager.swift; sourceTree = "<group>"; };
+		80E1C8CB2BCB192800B8A8DF /* PaymentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
+		80E1C8CC2BCB192800B8A8DF /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		80E1C8CD2BCB192800B8A8DF /* PaymentGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentGroup.swift; sourceTree = "<group>"; };
+		80E1C8CE2BCB192800B8A8DF /* PaymentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
 		DA7E9BA52BCB16010006EA5E /* RippleX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RippleX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7E9BA82BCB16010006EA5E /* RippleXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleXApp.swift; sourceTree = "<group>"; };
 		DA7E9BAA2BCB16010006EA5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +52,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80E1C8BC2BCB192000B8A8DF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				80E1C8BD2BCB192000B8A8DF /* Endpoints.swift */,
+				80E1C8BE2BCB192000B8A8DF /* APICoordinator.swift */,
+				80E1C8BF2BCB192000B8A8DF /* Model */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		80E1C8BF2BCB192000B8A8DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80E1C8C02BCB192000B8A8DF /* APIError.swift */,
+				80E1C8C12BCB192000B8A8DF /* APIMethod.swift */,
+				80E1C8C22BCB192000B8A8DF /* HTTPMethod.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80E1C8C82BCB192800B8A8DF /* PaymentsManager */ = {
+			isa = PBXGroup;
+			children = (
+				80E1C8C92BCB192800B8A8DF /* PaymentsManager.swift */,
+				80E1C8CA2BCB192800B8A8DF /* Model */,
+				80E1C8CE2BCB192800B8A8DF /* PaymentsView.swift */,
+			);
+			path = PaymentsManager;
+			sourceTree = "<group>";
+		};
+		80E1C8CA2BCB192800B8A8DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80E1C8CB2BCB192800B8A8DF /* PaymentResponse.swift */,
+				80E1C8CC2BCB192800B8A8DF /* Payment.swift */,
+				80E1C8CD2BCB192800B8A8DF /* PaymentGroup.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DA7E9B9C2BCB16010006EA5E = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +114,8 @@
 				DA7E9BA82BCB16010006EA5E /* RippleXApp.swift */,
 				DA7E9BAA2BCB16010006EA5E /* ContentView.swift */,
 				DA7E9BAC2BCB16020006EA5E /* Assets.xcassets */,
+				80E1C8C82BCB192800B8A8DF /* PaymentsManager */,
+				80E1C8BC2BCB192000B8A8DF /* API */,
 				DA7E9BAE2BCB16020006EA5E /* Preview Content */,
 			);
 			path = RippleX;
@@ -138,7 +200,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7E9BAB2BCB16010006EA5E /* ContentView.swift in Sources */,
+				80E1C8D32BCB192800B8A8DF /* PaymentsView.swift in Sources */,
+				80E1C8C42BCB192000B8A8DF /* APICoordinator.swift in Sources */,
+				80E1C8C72BCB192000B8A8DF /* HTTPMethod.swift in Sources */,
+				80E1C8C32BCB192000B8A8DF /* Endpoints.swift in Sources */,
+				80E1C8D22BCB192800B8A8DF /* PaymentGroup.swift in Sources */,
+				80E1C8D12BCB192800B8A8DF /* Payment.swift in Sources */,
+				80E1C8CF2BCB192800B8A8DF /* PaymentsManager.swift in Sources */,
+				80E1C8C52BCB192000B8A8DF /* APIError.swift in Sources */,
 				DA7E9BA92BCB16010006EA5E /* RippleXApp.swift in Sources */,
+				80E1C8D02BCB192800B8A8DF /* PaymentResponse.swift in Sources */,
+				80E1C8C62BCB192000B8A8DF /* APIMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
