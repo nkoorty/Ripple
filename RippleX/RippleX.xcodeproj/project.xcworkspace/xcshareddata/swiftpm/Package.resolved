@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MetaMask/metamask-ios-sdk.git",
       "state" : {
-        "revision" : "c085cff5762b0e1a7faa4243008715cf7b923809",
-        "version" : "0.6.0"
+        "revision" : "ce18a7f02f15a5530021923648c1c9b67ee82163",
+        "version" : "0.3.1"
       }
     },
     {

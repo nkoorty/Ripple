@@ -11,7 +11,7 @@ struct LoginView: View {
     @State private var password: String = ""
     @State private var showWalletView: Bool = false
     
-    @ObservedObject var metaMaskSDK = MetaMaskSDK.shared(appMetadata, sdkOptions: nil)
+    @ObservedObject var metaMaskSDK = MetaMaskSDK.shared(appMetadata)
     private static let appMetadata = AppMetadata(name: "Dub Dapp", url: "https://dubdapp.com")
 
     @State private var errorMessage = ""
@@ -35,7 +35,7 @@ struct LoginView: View {
                     .frame(height: 20)
                 
                 /// Title
-                Text("GhoShare")
+                Text("RipSplit")
                     .font(.system(size: 22, weight: .bold))
                 
                 Spacer()
@@ -98,7 +98,7 @@ struct LoginView: View {
                     showWalletView.toggle()
                 } label: {
                     HStack(spacing: 12) {
-                        Text("Create GhoShare Wallet")
+                        Text("Create RipSplit Wallet")
                             .font(.system(size: 18, weight: .semibold))
                             .foregroundStyle(.white)
                     }
