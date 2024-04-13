@@ -9,7 +9,7 @@ struct ProfileView: View {
     
     let catData = [PetData(type: "cat", population: 30)]
     
-    @ObservedObject var metaMaskSDK = MetaMaskSDK.shared(appMetadata, sdkOptions: nil)
+    @ObservedObject var metaMaskSDK = MetaMaskSDK.shared(appMetadata)
     private static let appMetadata = AppMetadata(name: "Dub Dapp", url: "https://dubdapp.com")
 
     @State private var errorMessage = ""

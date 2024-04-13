@@ -31,7 +31,7 @@ struct AbstractionView: View {
             Spacer()
             
             Button(action: onWalletCreation) {
-                Label("Create GhoShare Wallet", systemImage: "wallet.pass")
+                Label("Create RipSplit Wallet", systemImage: "wallet.pass")
                     .font(.system(size: 18, weight: .semibold))
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
