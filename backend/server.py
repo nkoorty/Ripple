@@ -9,18 +9,22 @@ def get_request():
     }
     return jsonify(dataJ)
 
-@app.route('/post', methods=['POST'])
-def post_request():
+@app.route('/createGroup', methods=['POST'])
+def create_group_request():
     try:
         data = request.json 
-        user_private_key = data.get('userPrivateKey')
-        item_amount = data.get('itemAmount')
-        item = data.get('item')
-        item_vendor_public_key = data.get('itemVendorPublicKey')
-        interval = data.get('interval')
+        print(data)
 
-
-        return jsonify({"message": "Received POST request", "data": data})
+        return jsonify({"message": "Received POST request"})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    
+@app.route('/createPaymentSplit', methods=['POST'])
+def payment_split_request():
+    try:
+        data = request.json 
+        print(data)
+        return jsonify({"message": "Payment has been Split"})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

@@ -7,7 +7,7 @@ module.exports = {
     xrplsidechain: {
       url: "https://rpc-evm-sidechain.xrpl.org",
       chainId: 1440002,
-      accounts: ['4de90b65c00873ca0ce43a55c9b0a3c31b32c05d55a7df56bfa0cacd5afa8f98'],
+      accounts: ['fc8525a135d9acc5c747fd2ce395fa0593dfd402b4fe7ace4ca1994b74c46b63'],
     }
   }
 };
