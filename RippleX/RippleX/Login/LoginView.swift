@@ -1,10 +1,3 @@
-//
-//  LoginView.swift
-//  LFGHO
-//
-//  Created by Artemiy Malyshau on 20/01/2024.
-//
-
 import SwiftUI
 import LocalAuthentication
 import metamask_ios_sdk

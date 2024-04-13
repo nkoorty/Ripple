@@ -1,10 +1,3 @@
-//
-//  BorrowView.swift
-//  GhoShare
-//
-//  Created by Artemiy Malyshau on 21/01/2024.
-//
-
 import SwiftUI
 
 struct BorrowView: View {

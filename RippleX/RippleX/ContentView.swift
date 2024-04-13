@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  RippleX
-//
-//  Created by Artemiy Malyshau on 13/04/2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {

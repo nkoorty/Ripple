@@ -1,10 +1,3 @@
-//
-//  GroupView.swift
-//  LFGHO
-//
-//  Created by Artemiy Malyshau on 20/01/2024.
-//
-
 import SwiftUI
 
 struct GroupView: View {

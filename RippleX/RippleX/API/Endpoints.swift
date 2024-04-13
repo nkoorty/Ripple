@@ -5,15 +5,15 @@ protocol EndpointProtocol {
 }
 
 enum Endpoints: EndpointProtocol {
-    case test
-    case post
+    case createGroup
+    case createPaymentSplit
     
     var path: String {
         switch self {
-        case .test:
-            return "/test"
-        case .post:
-            return "/post"
+        case .createGroup:
+            return "/createGroup"
+        case .createPaymentSplit:
+            return "/createPaymentSplit"
         }
     }
 }
