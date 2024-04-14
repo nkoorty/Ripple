@@ -47,7 +47,7 @@ RipSplit addresses these issues by facilitating direct, in-app settlements using
 
 ## Backend
 <p align="center">
-  @Adesh
+  Server-side backend consists of a flask server running in python, with endpoints to facilitate automatic smart contract integration. This is done with ethers.js and using the 'os' module in python, to automate hardhat run scripts.
 </p>
 
 ## Contracts
