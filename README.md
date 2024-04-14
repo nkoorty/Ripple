@@ -23,14 +23,7 @@ RipSplit is a mobile app designed to change how groups manage and settle expense
 RipSplit addresses these issues by facilitating direct, in-app settlements using the XRP EVM sidechain, significantly simplifying the management of shared expenses while enhancing security and flexibility. This approach ensures a smoother, more reliable and versatile experience in handling group finances, directly within the app.
 
 # Workflow:
-
-<p align="center">
-
-</p>
-
 ![Group 12](https://github.com/nkoorty/Ripple/assets/22000925/0f70eb50-31db-4d8f-948f-21653f501e0e)
-
-
 
 
 - The user can either connect an account using metamask or create a new account using smart accounts through account abstraction and Web3Auth as a non-custodial way of storing private keys.
