@@ -41,14 +41,11 @@ RipSplit addresses these issues by facilitating direct, in-app settlements using
 
 # Technical Documentation
 ## Frontend
-<p align="center">
-  @RT @Chrizz
-</p>
+The iOS dApp uses SwiftUI for entirety of the frontend. External libraries used include the MetaMask iOS SDK and the Unlimit iOS SDK for on- and off-ramping. Additionally, we have an extensive API coordinator to communicate with our backend REST API and hence all necessary smart contracts. Apple's native networking library, Combine, was used to connect to the MetaMask iOS SDK and handle all necessary networking operations and callbacks. The iOS code is written using the MVVM architecture for modularity and flexibility. 
 
 ## Backend
-<p align="center">
-  Server-side backend consists of a flask server running in python, with endpoints to facilitate automatic smart contract integration. This is done with ethers.js and using the 'os' module in python, to automate hardhat run scripts.
-</p>
+The server-side component of our project utilizes a Flask server written in Python. This server hosts various endpoints that are specifically designed to support the integration of our smart contracts. The integration process leverages the ethers.js library, to interact with the Ethereum blockchain and its smart contracts. Additionally, we use Python's 'os' module to execute automation scripts via Hardhat. This setup allows us to automate several tasks that are important for smart contract management and interaction, ensuring efficient and reliable backend operations for our application. Each endpoint on the Flask server is programmed to handle specific interactions with the blockchain, thereby streamlining our application.
+
 
 ## Contracts
 #### Account.sol: [0x70DF87FD59799c4e62829f066D4C59d08e56948f](https://evm-sidechain.xrpl.org/address/0x70DF87FD59799c4e62829f066D4C59d08e56948f)
