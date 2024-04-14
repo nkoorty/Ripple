@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+import os
 
 app = Flask(__name__)
 
@@ -13,6 +14,7 @@ def get_request():
 def create_group_request():
     try:
         data = request.json 
+        os.system('npx hardhat run scripts/addressInteraction.js --network xrplsidechain')
         print(data)
 
         return jsonify({"message": "Received POST request"})
@@ -22,7 +24,8 @@ def create_group_request():
 @app.route('/createPaymentSplit', methods=['POST'])
 def payment_split_request():
     try:
-        data = request.json 
+        data = request.json
+        os.system('npx hardhat run scripts/addressInteraction.js --network xrplsidechain') 
         print(data)
         return jsonify({"message": "Payment has been Split"})
     except Exception as e:

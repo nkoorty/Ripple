@@ -1,20 +1,7 @@
-const ethers = require('ethers');
 
-// Contract address and ABI
-const contractAddress = '0x690A1BBA3753EC440fFcA0201408F6871F92EC17';
-const contractABI = [
-    // Paste the contract ABI here
-];
+const { ethers } = require("hardhat");
 
-// Ethereum node connection
-const provider = new ethers.providers.JsonRpcProvider('YOUR_ETH_NODE_URL');
-const signer = provider.getSigner();
-
-// Contract instance
-const contract = new ethers.Contract(contractAddress, contractABI, signer);
-
-// Example function to sign an agreement
-async function signAgreement(lender, amount, dueDate, numInstallments) {
+async function signAgreement(contract, lender, amount, dueDate, numInstallments) {
     try {
         const tx = await contract.signAgreement(lender, amount, dueDate, numInstallments);
         await tx.wait();
@@ -24,8 +11,7 @@ async function signAgreement(lender, amount, dueDate, numInstallments) {
     }
 }
 
-// Example function to repay an installment
-async function repayInstallment(index, amount) {
+async function repayInstallment(contract, index, amount) {
     try {
         const tx = await contract.repay(index, { value: amount });
         await tx.wait();
@@ -35,8 +21,7 @@ async function repayInstallment(index, amount) {
     }
 }
 
-// Example function to provide liquidity
-async function provideLiquidity(amount) {
+async function provideLiquidity(contract, amount) {
     try {
         const tx = await contract.provideLiquidity({ value: amount });
         await tx.wait();
@@ -46,8 +31,7 @@ async function provideLiquidity(amount) {
     }
 }
 
-// Example function to withdraw liquidity
-async function withdrawLiquidity(amount) {
+async function withdrawLiquidity(contract, amount) {
     try {
         const tx = await contract.withdrawLiquidity(amount);
         await tx.wait();
@@ -57,8 +41,19 @@ async function withdrawLiquidity(amount) {
     }
 }
 
-// Call example functions
-signAgreement('LENDER_ADDRESS', 1000, 1754412800, 4); // Example parameters
-repayInstallment(0, 250); // Example parameters
-provideLiquidity(1000); // Example parameters
-withdrawLiquidity(500); // Example parameters
+// Main function to run the script
+async function main() {
+    const Contract = await ethers.getContractFactory("PayLater");
+    const contract = await Contract.attach('0x690A1BBA3753EC440fFcA0201408F6871F92EC17');
+
+    // Call example functions
+    await signAgreement(contract, '0x48d3e98336a45A1ddeE1f788FD63D9307368563f', 1000, 1754412800, 4); 
+    await repayInstallment(contract, 0, 250);
+    await provideLiquidity(contract, 1000); 
+    await withdrawLiquidity(contract, 500);
+}
+
+main().catch((error) => {
+    console.error(error);
+    process.exit(1);
+});
