@@ -7,6 +7,8 @@
 
 RipSplit is an iOS dApp built on the XRP EVM sidechain. It simplifies the process of splitting expenses and settling payments by using account abstraction and uses smart contracts to facilitate group management in a trustless and decentralised manner.
 
+Slides: https://www.canva.com/design/DAGCYKBdzaI/h1-fXzAMQQhjnSsZNM00iA/edit?utm_content=DAGCYKBdzaI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ## Images
 <img src=https://github.com/nkoorty/Ripple/assets/80065244/6fd3432d-c2b2-4a2a-b323-85805244c4b7 width=16% >
 <img src=https://github.com/nkoorty/Ripple/assets/80065244/c9b616e5-0974-40cd-b4ba-74b3c13494b0 width=16% >
@@ -60,13 +62,6 @@ The account factory contract uses `Create2` and `ERC1967Proxy` features from Ope
 #### Group.sol [0xEF63F82bE58DCfb96342E04DB0e553bA715de2Aa](https://evm-sidechain.xrpl.org/address/0xEF63F82bE58DCfb96342E04DB0e553bA715de2Aa)
 This contract manages the settlement groups and maps users names to smart account or wallet addresses. Function calls are used to display the information in app and are called in payment transactions. 
 
-
-
-
-# Future
-- Automated actions and workflows of the smart accounts (conditional payments, scheduled payments, automatic adjustment for currency fluctuations etc).
-- Add liquidity pool and option to take out small loans and delegate credit to other users.
-- Custom payment links 
 
 # Team
 - [Artemiy Malyshau](https://www.linkedin.com/in/artemiy-malyshau/): Frontend Engineer
