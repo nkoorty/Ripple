@@ -21,11 +21,11 @@ def create_group_request():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
     
-@app.route('/createPaymentSplit', methods=['POST'])
+@app.route('/settlePaymentSplit', methods=['POST'])
 def payment_split_request():
     try:
-        data = request.json
-        os.system('npx hardhat run scripts/addressInteraction.js --network xrplsidechain') 
+        data = request.json 
+        os.system('npx hardhat run scripts/interaction.js --network xrplsidechain')
         print(data)
         return jsonify({"message": "Payment has been Split"})
     except Exception as e:
