@@ -3,40 +3,46 @@ import SwiftUI
 struct GroupOverview: View {
     
     var group: Group
-    let tokens = ["AAV", "USDC", "GHO"]
     
-    @State private var selectedToken: String = "GHO"
-    @State private var presentBorrow = false
     @State private var presentPay = false
+    @State private var paymentAmount: Double = 0
+    
+    private var presentPayBinding: Binding<Bool> {
+        Binding(
+            get: { self.presentPay },
+            set: {
+                if $0 == true && self.presentPay == false {
+                }
+                self.presentPay = $0
+            }
+        )
+    }
     
     var body: some View {
         VStack {
             List {
                 Section {
                     ZStack(alignment: .bottomLeading) {
-                        Image("bg_aave_2")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 180)
-                            .clipped()
-                            .brightness(-0.2)
-                        VStack {
-                            Text("You owe")
-                                .font(.system(size: 18, weight: .semibold))
-                                .padding(.top, 20)
-                                .padding(.bottom, 4)
-                            Text("47.50")
-                                .font(.system(size: 46, weight: .bold))
-                            Spacer()
-                            Text("GHO ($US)")
-                                .font(.system(size: 18, weight: .semibold))
-                                .foregroundColor(.primary)
-                                .padding(.vertical, 10)
-                                .padding(.horizontal)
-                                .frame(maxWidth: .infinity, alignment: .center)
-                                .background(.thinMaterial)
+                        LinearGradient(gradient: Gradient(colors: [Color(red: 120/256, green: 40/256, blue: 250/256), Color(red: 50/256, green: 34/256, blue: 248/256)]), startPoint: .bottomLeading, endPoint: .topTrailing)
+                        
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("Hi Artemiy, you owe")
+                                .font(.system(size: 16, weight: .semibold))
+                                .foregroundStyle(.white.opacity(0.7))
+                            
+                            HStack {
+                                Text("£47.50")
+                                    .font(.system(size: 32, weight: .bold))
+                                
+                                Spacer()
+                                
+                                Text("~122.89 XRP")
+                                    .font(.system(size: 18, weight: .regular))
+                                    .foregroundStyle(.white.opacity(0.7))
+                            }
+                        
                         }
+                        .padding(20)
                     }
                 }
                 .listRowBackground(Color.clear)
@@ -73,55 +79,122 @@ struct GroupOverview: View {
                 
                 Section {
                     HStack {
-                        Text("Pay ") + Text("Jeevan").bold() + Text(" by 31.1.2024")
+                        Text("Pay ") + Text("Everyone").bold()
                     }
+
                     HStack {
-                        
-                        Picker("Select token", selection: $selectedToken) {
-                            ForEach(tokens, id: \.self) { token in
-                                Text(token).tag(token)
-                            }
-                        }
-                        .pickerStyle(MenuPickerStyle())
-                    }
-                    HStack {
-                        Text("Borrow GHO")
+                        Text("Pay 122.89 XRP")
                         
                         Spacer()
                         
                         Button {
-                            presentBorrow.toggle()
-                        } label: {
-                            Text("Borrow")
-                                .foregroundStyle(.blue)
-                        }
-                    }
-                    HStack {
-                        Text("Pay 47.5 GHO ")
-                        
-                        Spacer()
-                        
-                        Button {
-                            presentPay.toggle()
+                            paymentAmount = 122.89
+                            presentPayBinding.wrappedValue = true
                         } label: {
                             Text("Pay")
                                 .foregroundStyle(.blue)
                         }
                     }
                 } header: {
-                    Text("Transactions")
+                    Text("Pay Everyone")
                 } footer: {
-                    Text("You can choose to pay right now or borrow GHO using credit delegation.")
+                    Text("You can choose to pay everyone using a single wallet signature.")
+                }
+                .headerProminence(.increased)
+                
+                Section {
+                    
+                    HStack {
+                        Text("Pay ")
+                        
+                        Image("icon3")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20, height: 20)
+                            .cornerRadius(50)
+                        
+                        Text("Christian")
+                            .bold()
+                    }
+
+                    HStack {
+                        Text("Pay 32.43 XRP")
+                        
+                        Spacer()
+                        
+                        Button {
+                            paymentAmount = 32.43
+                            presentPayBinding.wrappedValue = true
+                        } label: {
+                            Text("Pay")
+                                .foregroundStyle(.blue)
+                        }
+                    }
+                    
+                    HStack {
+                        Text("Pay ")
+                        
+                        Image("icon4")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20, height: 20)
+                            .cornerRadius(50)
+                        
+                        Text("Adesh")
+                            .bold()
+                    }
+
+                    HStack {
+                        Text("Pay 53.43 XRP")
+                        
+                        Spacer()
+                        
+                        Button {
+                            paymentAmount = 53.43
+                            presentPayBinding.wrappedValue = true
+                        } label: {
+                            Text("Pay")
+                                .foregroundStyle(.blue)
+                        }
+                    }
+                    
+                    HStack {
+                        Text("Pay ")
+                        
+                        Image("icon2")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20, height: 20)
+                            .cornerRadius(50)
+                        
+                        Text("Jeevan")
+                            .bold()
+                    }
+
+                    HStack {
+                        Text("Pay 37.03 XRP")
+                        
+                        Spacer()
+                        
+                        Button {
+                            paymentAmount = 37.03
+                            presentPayBinding.wrappedValue = true
+                        } label: {
+                            Text("Pay")
+                                .foregroundStyle(.blue)
+                        }
+                    }
+                } header: {
+                    Text("Pay Individually")
+                } footer: {
+                    Text("You can choose to pay individual group members.")
                 }
                 .headerProminence(.increased)
                 
             }
             .navigationTitle(group.name)
-            .sheet(isPresented: $presentBorrow) {
-                BorrowView()
-            }
-            .sheet(isPresented: $presentPay) {
-                PayView()
+            .sheet(isPresented: presentPayBinding) {
+                PayView(amount: paymentAmount)
                     .presentationDetents([.fraction(0.5)])
             }
         }

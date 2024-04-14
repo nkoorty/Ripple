@@ -10,6 +10,6 @@ struct Activity: Identifiable, Hashable {
 
 var activities: [Activity] = [
     Activity(title: "Jeevan created the Boston Trip group", group: "Boston Trip", date: "20.1.2024", imageUrl: "icon2"),
-    Activity(title: "Mark paid $12 (12 GHO) towards London Getaway", group: "London Getaway", date: "18.1.2024", imageUrl: "icon3"),
-    Activity(title: "Theo left London Getaway", group: "London Getaway", date: "17.1.2024", imageUrl: "icon4"),
+    Activity(title: "Christian paid $12 (12 GHO) towards London Getaway", group: "London Getaway", date: "18.1.2024", imageUrl: "icon3"),
+    Activity(title: "Adesh left London Getaway", group: "London Getaway", date: "17.1.2024", imageUrl: "icon4"),
 ]

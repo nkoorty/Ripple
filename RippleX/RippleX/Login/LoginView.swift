@@ -20,26 +20,31 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Spacer()
-                    .frame(height: 80)
-                
-                VStack(alignment: .center) {
+                HStack {
                     Image("ghoshare")
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 140)
-                        .cornerRadius(34)
+                        .frame(width: 40, height: 40)
+                        .cornerRadius(20)
+                    
+                    Text("RipSplit")
+                        .font(.system(size: 20, weight: .semibold))
+                    
+                    Spacer()
                 }
                 
-                Spacer()
-                    .frame(height: 20)
+                Text("Payment Splitting Made Easy")
+                    .font(.system(size: 30, weight: .bold))
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 12)
                 
-                /// Title
-                Text("RipSplit")
-                    .font(.system(size: 22, weight: .bold))
+                Image("ghoshare")
+                    .resizable()
+                    .scaledToFit()
+                    .cornerRadius(20)
+                    .frame(maxWidth: .infinity)
+                    .padding()
                 
-                Spacer()
-                    .frame(height: 70)
                 
                 Button {
                     Task {
@@ -62,37 +67,17 @@ struct LoginView: View {
                             
                             Spacer()
                         }
-                        .padding()
+                            .padding()
                     )
                     .background(
                         RoundedRectangle(cornerRadius: 12)
                             .fill(.white.opacity(0.1))
-                            .frame(height: 50)
+                            .frame(height: 56)
                     )
                     .padding(.top, 20)
                 }
-                
-                Spacer()
-                    .frame(height: 36)
-                
-                HStack{
-                    Rectangle()
-                        .frame(width: 150, height: 2)
-                        .cornerRadius(3)
-                        .foregroundColor(.gray)
-                    
-                    Text("OR")
-                        .foregroundColor(.gray)
-                    
-                    Rectangle()
-                        .frame(width: 150, height: 2)
-                        .cornerRadius(3)
-                        .foregroundColor(.gray)
-                }
-                
-                Spacer()
-                    .frame(height: 18)
-                
+                .padding(.top, 12)
+                .padding(.bottom, 16)
                 
                 Button {
                     showWalletView.toggle()
@@ -110,6 +95,7 @@ struct LoginView: View {
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 16, height: 16)
+                                .padding(.leading, 6)
                             
                             Spacer()
                         }
@@ -118,7 +104,7 @@ struct LoginView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 12)
                             .fill(.white.opacity(0.1))
-                            .frame(height: 50)
+                            .frame(height: 56)
                     )
                     .padding(.top, 20)
                 }
@@ -128,9 +114,8 @@ struct LoginView: View {
                 Text("By continuing, you agree to our User Agreement and Privacy Policy.")
                     .font(.caption)
                     .foregroundColor(.white.opacity(0.60))
-                    .hCenter()
+                    .multilineTextAlignment(.center)
                     .padding(.top, 20)
-                    .padding(.leading, 4)
                 
                 Spacer()
                 

@@ -11,28 +11,29 @@ struct HomeView: View {
             List {
                 Section {
                     ZStack(alignment: .bottomLeading) {
-                        Image("bg_aave")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 180)
-                            .clipped()
-                        VStack {
-                            Text("In total, you owe")
-                                .font(.system(size: 18, weight: .semibold))
-                                .padding(.top, 20)
-                                .padding(.bottom, 4)
-                            Text(settings.connectedMetaMask ? "47.50" : "0.00")
-                                .font(.system(size: 46, weight: .bold))
-                            Spacer()
-                            Text("GHO ($US)")
-                                .font(.system(size: 18, weight: .semibold))
-                                .foregroundColor(.primary)
-                                .padding(.vertical, 10)
-                                .padding(.horizontal)
-                                .frame(maxWidth: .infinity, alignment: .center)
-                                .background(.thinMaterial)
+                        LinearGradient(gradient: Gradient(colors: [Color(red: 50/256, green: 34/256, blue: 248/256), Color(red: 120/256, green: 40/256, blue: 250/256)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                        
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("Hi Artemiy, you owe")
+                                .font(.system(size: 16, weight: .semibold))
+                                .foregroundStyle(.white.opacity(0.7))
+                            
+                            HStack {
+                                Text("£47.50")
+                                    .font(.system(size: 32, weight: .bold))
+                                
+                                Spacer()
+                                
+                                Text("~122.89 XRP")
+                                    .font(.system(size: 18, weight: .regular))
+                                    .foregroundStyle(.white.opacity(0.7))
+                            }
+                            
+                            (Text("in ") + Text("2 Groups").bold() + Text(" for ") + Text("9 Payments").bold() + Text(" in total"))
+                                .font(.system(size: 16))
+                        
                         }
+                        .padding(20)
                     }
                 }
                 .listRowBackground(Color.clear)
