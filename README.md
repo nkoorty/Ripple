@@ -36,14 +36,12 @@ RipSplit addresses these issues by facilitating direct, in-app settlements using
 
 
 # Technical Documentation
-#### Account.sol
-[0x70DF87FD59799c4e62829f066D4C59d08e56948f](https://evm-sidechain.xrpl.org/address/0x70DF87FD59799c4e62829f066D4C59d08e56948f)
+#### Account.sol: [0x70DF87FD59799c4e62829f066D4C59d08e56948f](https://evm-sidechain.xrpl.org/address/0x70DF87FD59799c4e62829f066D4C59d08e56948f)
 Is the smart contract for the EIP 4337 smart accounts that incorporate account abstraction with features such as upgradability, initialisation and session management for multiple users. The contract allows for secure owner-only operations like withdrawals and updates and facilitates execution of both individual and batch transactions. It also logs activities through events for traceability. 
 
 - `execute` - executes a single transaction to a specified destination with a given amount.
 - `executeBatch` - executes multiple transactions in a batch to different destinations with specified amount.
-#### AccountFactory.sol
-[0xE08B3A7e9813d1c1781Bc1e8176bf13d0a5BfA50](https://evm-sidechain.xrpl.org/address/0xE08B3A7e9813d1c1781Bc1e8176bf13d0a5BfA50?tab=txs)
+#### AccountFactory.sol: [0xE08B3A7e9813d1c1781Bc1e8176bf13d0a5BfA50](https://evm-sidechain.xrpl.org/address/0xE08B3A7e9813d1c1781Bc1e8176bf13d0a5BfA50?tab=txs)
 The account factory contract uses `Create2` and `ERC1967Proxy` features from OpenZeppelin to facilitate the creation and management of upgradable `Account` instances. The factory uses an immutable template of the `Account` contract, initialised with a specific entry point, to deploy new account instances with unique salts and owner addresses. 
 
 
