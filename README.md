@@ -65,6 +65,7 @@ This contract manages the settlement groups and maps users names to smart accoun
 # Future
 - Automated actions and workflows of the smart accounts (conditional payments, scheduled payments, automatic adjustment for currency fluctuations etc).
 - Add liquidity pool and option to take out small loans and delegate credit to other users.
+- Custom payment links 
 
 # Team
 - [Artemiy Malyshau](https://www.linkedin.com/in/artemiy-malyshau/): Frontend Engineer
