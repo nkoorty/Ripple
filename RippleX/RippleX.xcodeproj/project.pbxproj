@@ -17,6 +17,11 @@
 		80E1C8D12BCB192800B8A8DF /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8CC2BCB192800B8A8DF /* Payment.swift */; };
 		80E1C8D22BCB192800B8A8DF /* PaymentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8CD2BCB192800B8A8DF /* PaymentGroup.swift */; };
 		80E1C8D32BCB192800B8A8DF /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8CE2BCB192800B8A8DF /* PaymentsView.swift */; };
+		DA5C4F132BCBCA620001DC9E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DA5C4F122BCBCA620001DC9E /* Lottie */; };
+		DA5C4F152BCBCA7B0001DC9E /* loadinglottie.json in Resources */ = {isa = PBXBuildFile; fileRef = DA5C4F142BCBCA7B0001DC9E /* loadinglottie.json */; };
+		DA5C4F172BCBCA7F0001DC9E /* lottie3.json in Resources */ = {isa = PBXBuildFile; fileRef = DA5C4F162BCBCA7F0001DC9E /* lottie3.json */; };
+		DA5C4F192BCBCA890001DC9E /* LoadingSettleUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5C4F182BCBCA890001DC9E /* LoadingSettleUpView.swift */; };
+		DA5C4F1B2BCBDBDA0001DC9E /* OnShakeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5C4F1A2BCBDBDA0001DC9E /* OnShakeModifier.swift */; };
 		DA7E9BA92BCB16010006EA5E /* RippleXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BA82BCB16010006EA5E /* RippleXApp.swift */; };
 		DA7E9BAD2BCB16020006EA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7E9BAC2BCB16020006EA5E /* Assets.xcassets */; };
 		DA7E9BB02BCB16020006EA5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7E9BAF2BCB16020006EA5E /* Preview Assets.xcassets */; };
@@ -55,6 +60,10 @@
 		80E1C8CC2BCB192800B8A8DF /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		80E1C8CD2BCB192800B8A8DF /* PaymentGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentGroup.swift; sourceTree = "<group>"; };
 		80E1C8CE2BCB192800B8A8DF /* PaymentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
+		DA5C4F142BCBCA7B0001DC9E /* loadinglottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loadinglottie.json; sourceTree = "<group>"; };
+		DA5C4F162BCBCA7F0001DC9E /* lottie3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie3.json; sourceTree = "<group>"; };
+		DA5C4F182BCBCA890001DC9E /* LoadingSettleUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingSettleUpView.swift; sourceTree = "<group>"; };
+		DA5C4F1A2BCBDBDA0001DC9E /* OnShakeModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnShakeModifier.swift; sourceTree = "<group>"; };
 		DA7E9BA52BCB16010006EA5E /* RippleX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RippleX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7E9BA82BCB16010006EA5E /* RippleXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleXApp.swift; sourceTree = "<group>"; };
 		DA7E9BAC2BCB16020006EA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +97,7 @@
 			files = (
 				DA7E9BEF2BCB26110006EA5E /* metamask-ios-sdk in Frameworks */,
 				DA7E9BF22BCB526B0006EA5E /* ScalingHeaderScrollView in Frameworks */,
+				DA5C4F132BCBCA620001DC9E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +163,8 @@
 		DA7E9BA72BCB16010006EA5E /* RippleX */ = {
 			isa = PBXGroup;
 			children = (
+				DA5C4F162BCBCA7F0001DC9E /* lottie3.json */,
+				DA5C4F142BCBCA7B0001DC9E /* loadinglottie.json */,
 				DA7E9BA82BCB16010006EA5E /* RippleXApp.swift */,
 				DA7E9BE82BCB1C460006EA5E /* TabBarView.swift */,
 				DA7E9BAC2BCB16020006EA5E /* Assets.xcassets */,
@@ -188,11 +200,13 @@
 		DA7E9BC02BCB1C3B0006EA5E /* Group */ = {
 			isa = PBXGroup;
 			children = (
+				DA5C4F1A2BCBDBDA0001DC9E /* OnShakeModifier.swift */,
 				DA7E9BBA2BCB1C3B0006EA5E /* Group.swift */,
 				DA7E9BBB2BCB1C3B0006EA5E /* GroupAddingView.swift */,
 				DA7E9BBC2BCB1C3B0006EA5E /* GroupOverview.swift */,
 				DA7E9BBD2BCB1C3B0006EA5E /* GroupView.swift */,
 				DA7E9BBE2BCB1C3B0006EA5E /* GroupViewModel.swift */,
+				DA5C4F182BCBCA890001DC9E /* LoadingSettleUpView.swift */,
 				DA7E9BBF2BCB1C3B0006EA5E /* PayView.swift */,
 			);
 			path = Group;
@@ -273,6 +287,7 @@
 			packageProductDependencies = (
 				DA7E9BEE2BCB26110006EA5E /* metamask-ios-sdk */,
 				DA7E9BF12BCB526B0006EA5E /* ScalingHeaderScrollView */,
+				DA5C4F122BCBCA620001DC9E /* Lottie */,
 			);
 			productName = RippleX;
 			productReference = DA7E9BA52BCB16010006EA5E /* RippleX.app */;
@@ -305,6 +320,7 @@
 			packageReferences = (
 				DA7E9BED2BCB26110006EA5E /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
 				DA7E9BF02BCB526B0006EA5E /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */,
+				DA5C4F112BCBCA620001DC9E /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = DA7E9BA62BCB16010006EA5E /* Products */;
 			projectDirPath = "";
@@ -320,8 +336,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5C4F172BCBCA7F0001DC9E /* lottie3.json in Resources */,
 				DA7E9BB02BCB16020006EA5E /* Preview Assets.xcassets in Resources */,
 				DA7E9BAD2BCB16020006EA5E /* Assets.xcassets in Resources */,
+				DA5C4F152BCBCA7B0001DC9E /* loadinglottie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +352,9 @@
 			files = (
 				DA7E9BE92BCB1C460006EA5E /* TabBarView.swift in Sources */,
 				DA7E9BDB2BCB1C3C0006EA5E /* PayView.swift in Sources */,
+				DA5C4F1B2BCBDBDA0001DC9E /* OnShakeModifier.swift in Sources */,
 				DA7E9BE52BCB1C3C0006EA5E /* Activity.swift in Sources */,
+				DA5C4F192BCBCA890001DC9E /* LoadingSettleUpView.swift in Sources */,
 				80E1C8D32BCB192800B8A8DF /* PaymentsView.swift in Sources */,
 				DA7E9BD62BCB1C3C0006EA5E /* Group.swift in Sources */,
 				DA7E9BDA2BCB1C3C0006EA5E /* GroupViewModel.swift in Sources */,
@@ -503,8 +523,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,8 +553,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -572,6 +592,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DA5C4F112BCBCA620001DC9E /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.2;
+			};
+		};
 		DA7E9BED2BCB26110006EA5E /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MetaMask/metamask-ios-sdk.git";
@@ -591,6 +619,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DA5C4F122BCBCA620001DC9E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA5C4F112BCBCA620001DC9E /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
 		DA7E9BEE2BCB26110006EA5E /* metamask-ios-sdk */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DA7E9BED2BCB26110006EA5E /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */;

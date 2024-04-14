@@ -1,4 +1,5 @@
 import SwiftUI
+import LocalAuthentication
 
 struct GroupOverview: View {
     
@@ -6,6 +7,9 @@ struct GroupOverview: View {
     
     @State private var presentPay = false
     @State private var paymentAmount: Double = 0
+    @State private var payeeName: String = ""
+    @State private var shakePresent: Bool = false
+    @State private var isShakePaymentCompleted: Bool = false
     
     private var presentPayBinding: Binding<Bool> {
         Binding(
@@ -88,6 +92,7 @@ struct GroupOverview: View {
                         Spacer()
                         
                         Button {
+                            payeeName = "Everyone"
                             paymentAmount = 122.89
                             presentPayBinding.wrappedValue = true
                         } label: {
@@ -123,6 +128,7 @@ struct GroupOverview: View {
                         Spacer()
                         
                         Button {
+                            payeeName = "Christian"
                             paymentAmount = 32.43
                             presentPayBinding.wrappedValue = true
                         } label: {
@@ -150,6 +156,7 @@ struct GroupOverview: View {
                         Spacer()
                         
                         Button {
+                            payeeName = "Adesh"
                             paymentAmount = 53.43
                             presentPayBinding.wrappedValue = true
                         } label: {
@@ -177,6 +184,7 @@ struct GroupOverview: View {
                         Spacer()
                         
                         Button {
+                            payeeName = "Jeevan"
                             paymentAmount = 37.03
                             presentPayBinding.wrappedValue = true
                         } label: {
@@ -194,9 +202,39 @@ struct GroupOverview: View {
             }
             .navigationTitle(group.name)
             .sheet(isPresented: presentPayBinding) {
-                PayView(amount: paymentAmount)
+                PayView(name: payeeName, amount: paymentAmount)
                     .presentationDetents([.fraction(0.5)])
             }
+        }
+        .onShake {
+            authenticate()
+        }
+        .fullScreenCover(isPresented: $shakePresent) {
+            LoadingSettleUpView(name: "Everyone", amount: 34, isCompleted: $isShakePaymentCompleted)
+        }
+    }
+    
+    func authenticate() {
+        let context = LAContext()
+        var error: NSError?
+
+        // check whether biometric authentication is possible
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            // it's possible, so go ahead and use it
+            let reason = "We need to unlock your data."
+
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+                // authentication has now completed
+                if success {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        shakePresent.toggle()
+                    }
+                } else {
+                    // there was a problem
+                }
+            }
+        } else {
+            // no biometrics
         }
     }
 }

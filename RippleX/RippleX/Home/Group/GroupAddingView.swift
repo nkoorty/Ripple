@@ -29,7 +29,7 @@ struct GroupAddingView: View {
                 }
                 
                 Section {
-                    Text("By creating a group, you agree to creating a Vault for the allocation of GHO tokens amongst all future users within the group.")
+                    Text("By creating a group, you agree to creating a smart contract amongst all future users within the group.")
                 }
                 .listRowBackground(Color.clear)
                 .listRowInsets(EdgeInsets())
@@ -61,7 +61,7 @@ struct GroupAddingView: View {
                 if success {
                     if let owedAmountValue = Double(self.owedAmount ?? "") {
                         // Proceed only if the conversion is successful
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                             self.viewModel.addGroup(
                                 name: self.newGroupName ?? "",
                                 imageUrl: "icon",
@@ -74,14 +74,11 @@ struct GroupAddingView: View {
                             self.presentationMode.wrappedValue.dismiss()
                         }
                     } else {
-                        // Handle the error scenario, perhaps show an alert to the user
                     }
                 } else {
-                    // there was a problem
                 }
             }
         } else {
-            // no biometrics
         }
     }
 }

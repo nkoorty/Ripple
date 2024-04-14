@@ -7,9 +7,16 @@
 
 RipSplit is an iOS dApp built on the XRP EVM sidechain. It simplifies the process of splitting expenses and settling payments by using account abstraction and uses smart contracts to facilitate group management in a trustless and decentralised manner.
 
-<p align="center">
-  [ADD IMAGES]
-</p>
+[Slides](https://www.canva.com/design/DAGCYKBdzaI/h1-fXzAMQQhjnSsZNM00iA/edit?utm_content=DAGCYKBdzaI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+## Images
+<img src=https://github.com/nkoorty/Ripple/assets/80065244/6fd3432d-c2b2-4a2a-b323-85805244c4b7 width=16% >
+<img src=https://github.com/nkoorty/Ripple/assets/80065244/c9b616e5-0974-40cd-b4ba-74b3c13494b0 width=16% >
+<img src=https://github.com/nkoorty/Ripple/assets/80065244/4dd7fe68-022d-4842-b064-848b4b26084d width=16% >
+<img src=https://github.com/nkoorty/Ripple/assets/80065244/d3aeeac1-ed91-4763-936f-a8c0f82db068 width=16% >
+<img src=https://github.com/nkoorty/Ripple/assets/80065244/6178ae0d-6738-4e9f-9007-c3b612a3940c width=16% >
+<img src=https://github.com/nkoorty/Ripple/assets/80065244/5d7e4333-4c3e-4b15-bc05-8924dabd53d5 width=16% >
+
 
 # Problem Statement
 
@@ -18,11 +25,7 @@ RipSplit is a mobile app designed to change how groups manage and settle expense
 RipSplit addresses these issues by facilitating direct, in-app settlements using the XRP EVM sidechain, significantly simplifying the management of shared expenses while enhancing security and flexibility. This approach ensures a smoother, more reliable and versatile experience in handling group finances, directly within the app.
 
 # Workflow:
-
-<p align="center">
-  [Workflow Diagram]
-  https://www.figma.com/file/500rAeOuPjuVdLkSwBZSnf/Untitled?type=design&node-id=0-1&mode=design&t=BUVHnmrbzX5Mf3Jv-0
-</p>
+![Group 12](https://github.com/nkoorty/Ripple/assets/22000925/0f70eb50-31db-4d8f-948f-21653f501e0e)
 
 
 - The user can either connect an account using metamask or create a new account using smart accounts through account abstraction and Web3Auth as a non-custodial way of storing private keys.
@@ -59,13 +62,6 @@ The account factory contract uses `Create2` and `ERC1967Proxy` features from Ope
 #### Group.sol [0xEF63F82bE58DCfb96342E04DB0e553bA715de2Aa](https://evm-sidechain.xrpl.org/address/0xEF63F82bE58DCfb96342E04DB0e553bA715de2Aa)
 This contract manages the settlement groups and maps users names to smart account or wallet addresses. Function calls are used to display the information in app and are called in payment transactions. 
 
-
-
-
-# Future
-- Automated actions and workflows of the smart accounts (conditional payments, scheduled payments, automatic adjustment for currency fluctuations etc).
-- Add liquidity pool and option to take out small loans and delegate credit to other users.
-- Custom payment links 
 
 # Team
 - [Artemiy Malyshau](https://www.linkedin.com/in/artemiy-malyshau/): Frontend Engineer

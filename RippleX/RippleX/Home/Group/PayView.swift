@@ -1,9 +1,16 @@
 import SwiftUI
+import LocalAuthentication
 
 struct PayView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
+    @ObservedObject var settings = Settings()
+
+    @State private var presentLoading: Bool = false
+    @State private var isPaymentCompleted: Bool = false
+    
+    var name: String
     var amount: Double
     
     var body: some View {
@@ -20,9 +27,9 @@ struct PayView: View {
                 Spacer()
                     .frame(height: 20)
                 Button {
-                    presentationMode.wrappedValue.dismiss()
+                    authenticate()
                 } label: {
-                    Label("Pay \(String(format: "%.2f", amount)) XRP (£\(String(format: "%.2f", amount/2.59)))", systemImage: "dollarsign")
+                    Label("Pay \(name) \(String(format: "%.2f", amount)) XRP (£\(String(format: "%.2f", amount/2.59)))", systemImage: "dollarsign")
                         .font(.system(size: 18, weight: .semibold))
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
@@ -55,12 +62,46 @@ struct PayView: View {
                     }
                 }
             }
+            .onChange(of: isPaymentCompleted) { completed in
+                if completed {
+                    presentationMode.wrappedValue.dismiss()
+                    settings.paidExpense.toggle()
+                }
+            }
             .padding(.horizontal, 16)
+        }
+        
+        .fullScreenCover(isPresented: $presentLoading) {
+            LoadingSettleUpView(name: name, amount: amount, isCompleted: $isPaymentCompleted)
+        }
+    }
+    
+    func authenticate() {
+        let context = LAContext()
+        var error: NSError?
+
+        // check whether biometric authentication is possible
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            // it's possible, so go ahead and use it
+            let reason = "We need to unlock your data."
+
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+                // authentication has now completed
+                if success {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        presentLoading.toggle()
+                    }
+                } else {
+                    // there was a problem
+                }
+            }
+        } else {
+            // no biometrics
         }
     }
 }
 
 #Preview {
-    PayView(amount: 16)
+    PayView(name: "Jeevan", amount: 16)
         .preferredColorScheme(.dark)
 }
