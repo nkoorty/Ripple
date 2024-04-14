@@ -42,21 +42,6 @@ struct ProfileView: View {
                                 )
                                 .padding(20)
                             Spacer()
-                            VStack {
-                                HStack {
-                                    NavigationLink  {
-                                        AaveDashboard()
-                                    } label: {
-                                        Text("Aave Dashboard")
-                                            .font(.system(size: 18))
-                                            .foregroundColor(.primary)
-                                    }
-                                }
-                                .padding(.horizontal)
-                                .padding(.vertical, 10)
-                            }
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .background(.thinMaterial)
                         }
                     }
                 }
@@ -158,7 +143,7 @@ struct ProfileView: View {
                     Button {
                         UserDefaults.standard.set(false, forKey: "signin")
                     } label: {
-                        Text("Log out")
+                        Label("Log out", systemImage: "arrow.uturn.left")
                             .foregroundStyle(.red)
                     }
                 } header: {

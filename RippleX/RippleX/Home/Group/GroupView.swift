@@ -4,11 +4,28 @@ struct GroupView: View {
     var group: Group
     var body: some View {
         HStack(spacing: 12) {
-            Image(group.imageUrl)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 40, height: 40)
-                .cornerRadius(50)
+            ZStack {
+                Image(group.imageUrl)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 24, height: 24)
+                    .cornerRadius(50)
+                    .offset(x: -8, y: -6)
+                
+                Image(group.imageUrl2)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 23, height: 23)
+                    .cornerRadius(50)
+                    .offset(x: 6, y: -2)
+                
+                Image(group.imageUrl3)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 22, height: 22)
+                    .cornerRadius(50)
+                    .offset(x: 0, y: 8)
+            }
             
             VStack(alignment: .leading, spacing: 4) {
                 Text(group.name)
@@ -25,7 +42,7 @@ struct GroupView: View {
                     .foregroundColor(group.open ? .gray : .white)
                     .font(.system(size: 14))
                 
-                Text("\(String(format: "%.2f", group.owedAmount)) US$")
+                Text("£\(String(format: "%.2f", group.owedAmount))")
                     .bold()
             }
         }

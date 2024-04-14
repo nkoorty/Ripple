@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80C1D6B32BCB1FD70035206A /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 80C1D6B22BCB1FD70035206A /* metamask-ios-sdk */; };
 		80E1C8C32BCB192000B8A8DF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8BD2BCB192000B8A8DF /* Endpoints.swift */; };
 		80E1C8C42BCB192000B8A8DF /* APICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8BE2BCB192000B8A8DF /* APICoordinator.swift */; };
 		80E1C8C52BCB192000B8A8DF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8C02BCB192000B8A8DF /* APIError.swift */; };
@@ -19,12 +18,10 @@
 		80E1C8D22BCB192800B8A8DF /* PaymentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8CD2BCB192800B8A8DF /* PaymentGroup.swift */; };
 		80E1C8D32BCB192800B8A8DF /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1C8CE2BCB192800B8A8DF /* PaymentsView.swift */; };
 		DA7E9BA92BCB16010006EA5E /* RippleXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BA82BCB16010006EA5E /* RippleXApp.swift */; };
-		DA7E9BAB2BCB16010006EA5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BAA2BCB16010006EA5E /* ContentView.swift */; };
 		DA7E9BAD2BCB16020006EA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7E9BAC2BCB16020006EA5E /* Assets.xcassets */; };
 		DA7E9BB02BCB16020006EA5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7E9BAF2BCB16020006EA5E /* Preview Assets.xcassets */; };
 		DA7E9BD32BCB1C3C0006EA5E /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BB62BCB1C3B0006EA5E /* Expense.swift */; };
 		DA7E9BD42BCB1C3C0006EA5E /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BB72BCB1C3B0006EA5E /* ExpenseView.swift */; };
-		DA7E9BD52BCB1C3C0006EA5E /* BorrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BB92BCB1C3B0006EA5E /* BorrowView.swift */; };
 		DA7E9BD62BCB1C3C0006EA5E /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BBA2BCB1C3B0006EA5E /* Group.swift */; };
 		DA7E9BD72BCB1C3C0006EA5E /* GroupAddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BBB2BCB1C3B0006EA5E /* GroupAddingView.swift */; };
 		DA7E9BD82BCB1C3C0006EA5E /* GroupOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BBC2BCB1C3B0006EA5E /* GroupOverview.swift */; };
@@ -37,7 +34,6 @@
 		DA7E9BDF2BCB1C3C0006EA5E /* AbstractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BC62BCB1C3B0006EA5E /* AbstractionView.swift */; };
 		DA7E9BE02BCB1C3C0006EA5E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BC72BCB1C3B0006EA5E /* LoginView.swift */; };
 		DA7E9BE12BCB1C3C0006EA5E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BC82BCB1C3B0006EA5E /* Settings.swift */; };
-		DA7E9BE22BCB1C3C0006EA5E /* AaveDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BCA2BCB1C3B0006EA5E /* AaveDashboard.swift */; };
 		DA7E9BE32BCB1C3C0006EA5E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BCB2BCB1C3B0006EA5E /* ProfileView.swift */; };
 		DA7E9BE42BCB1C3C0006EA5E /* +Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BCD2BCB1C3B0006EA5E /* +Ext.swift */; };
 		DA7E9BE52BCB1C3C0006EA5E /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BCF2BCB1C3C0006EA5E /* Activity.swift */; };
@@ -45,6 +41,7 @@
 		DA7E9BE72BCB1C3C0006EA5E /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BD12BCB1C3C0006EA5E /* ActivityView.swift */; };
 		DA7E9BE92BCB1C460006EA5E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E9BE82BCB1C460006EA5E /* TabBarView.swift */; };
 		DA7E9BEF2BCB26110006EA5E /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = DA7E9BEE2BCB26110006EA5E /* metamask-ios-sdk */; };
+		DA7E9BF22BCB526B0006EA5E /* ScalingHeaderScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = DA7E9BF12BCB526B0006EA5E /* ScalingHeaderScrollView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,12 +57,10 @@
 		80E1C8CE2BCB192800B8A8DF /* PaymentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
 		DA7E9BA52BCB16010006EA5E /* RippleX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RippleX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7E9BA82BCB16010006EA5E /* RippleXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleXApp.swift; sourceTree = "<group>"; };
-		DA7E9BAA2BCB16010006EA5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA7E9BAC2BCB16020006EA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7E9BAF2BCB16020006EA5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA7E9BB62BCB1C3B0006EA5E /* Expense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		DA7E9BB72BCB1C3B0006EA5E /* ExpenseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
-		DA7E9BB92BCB1C3B0006EA5E /* BorrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowView.swift; sourceTree = "<group>"; };
 		DA7E9BBA2BCB1C3B0006EA5E /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		DA7E9BBB2BCB1C3B0006EA5E /* GroupAddingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupAddingView.swift; sourceTree = "<group>"; };
 		DA7E9BBC2BCB1C3B0006EA5E /* GroupOverview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupOverview.swift; sourceTree = "<group>"; };
@@ -78,7 +73,6 @@
 		DA7E9BC62BCB1C3B0006EA5E /* AbstractionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractionView.swift; sourceTree = "<group>"; };
 		DA7E9BC72BCB1C3B0006EA5E /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DA7E9BC82BCB1C3B0006EA5E /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		DA7E9BCA2BCB1C3B0006EA5E /* AaveDashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AaveDashboard.swift; sourceTree = "<group>"; };
 		DA7E9BCB2BCB1C3B0006EA5E /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DA7E9BCD2BCB1C3B0006EA5E /* +Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "+Ext.swift"; sourceTree = "<group>"; };
 		DA7E9BCF2BCB1C3C0006EA5E /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
@@ -93,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7E9BEF2BCB26110006EA5E /* metamask-ios-sdk in Frameworks */,
+				DA7E9BF22BCB526B0006EA5E /* ScalingHeaderScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				DA7E9BA82BCB16010006EA5E /* RippleXApp.swift */,
-				DA7E9BAA2BCB16010006EA5E /* ContentView.swift */,
 				DA7E9BE82BCB1C460006EA5E /* TabBarView.swift */,
 				DA7E9BAC2BCB16020006EA5E /* Assets.xcassets */,
 				DA7E9BD22BCB1C3C0006EA5E /* Activity */,
@@ -194,7 +188,6 @@
 		DA7E9BC02BCB1C3B0006EA5E /* Group */ = {
 			isa = PBXGroup;
 			children = (
-				DA7E9BB92BCB1C3B0006EA5E /* BorrowView.swift */,
 				DA7E9BBA2BCB1C3B0006EA5E /* Group.swift */,
 				DA7E9BBB2BCB1C3B0006EA5E /* GroupAddingView.swift */,
 				DA7E9BBC2BCB1C3B0006EA5E /* GroupOverview.swift */,
@@ -238,7 +231,6 @@
 		DA7E9BCC2BCB1C3B0006EA5E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				DA7E9BCA2BCB1C3B0006EA5E /* AaveDashboard.swift */,
 				DA7E9BCB2BCB1C3B0006EA5E /* ProfileView.swift */,
 			);
 			path = Profile;
@@ -280,6 +272,7 @@
 			name = RippleX;
 			packageProductDependencies = (
 				DA7E9BEE2BCB26110006EA5E /* metamask-ios-sdk */,
+				DA7E9BF12BCB526B0006EA5E /* ScalingHeaderScrollView */,
 			);
 			productName = RippleX;
 			productReference = DA7E9BA52BCB16010006EA5E /* RippleX.app */;
@@ -311,6 +304,7 @@
 			mainGroup = DA7E9B9C2BCB16010006EA5E;
 			packageReferences = (
 				DA7E9BED2BCB26110006EA5E /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
+				DA7E9BF02BCB526B0006EA5E /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */,
 			);
 			productRefGroup = DA7E9BA62BCB16010006EA5E /* Products */;
 			projectDirPath = "";
@@ -340,10 +334,7 @@
 			files = (
 				DA7E9BE92BCB1C460006EA5E /* TabBarView.swift in Sources */,
 				DA7E9BDB2BCB1C3C0006EA5E /* PayView.swift in Sources */,
-				DA7E9BAB2BCB16010006EA5E /* ContentView.swift in Sources */,
 				DA7E9BE52BCB1C3C0006EA5E /* Activity.swift in Sources */,
-				DA7E9BD52BCB1C3C0006EA5E /* BorrowView.swift in Sources */,
-				DA7E9BE22BCB1C3C0006EA5E /* AaveDashboard.swift in Sources */,
 				80E1C8D32BCB192800B8A8DF /* PaymentsView.swift in Sources */,
 				DA7E9BD62BCB1C3C0006EA5E /* Group.swift in Sources */,
 				DA7E9BDA2BCB1C3C0006EA5E /* GroupViewModel.swift in Sources */,
@@ -508,6 +499,7 @@
 				DEVELOPMENT_TEAM = 288ZUH88HD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID is required to approve your requests,";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -537,6 +529,7 @@
 				DEVELOPMENT_TEAM = 288ZUH88HD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID is required to approve your requests,";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -587,6 +580,14 @@
 				version = 0.3.1;
 			};
 		};
+		DA7E9BF02BCB526B0006EA5E /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ScalingHeaderScrollView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -594,6 +595,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DA7E9BED2BCB26110006EA5E /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */;
 			productName = "metamask-ios-sdk";
+		};
+		DA7E9BF12BCB526B0006EA5E /* ScalingHeaderScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA7E9BF02BCB526B0006EA5E /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */;
+			productName = ScalingHeaderScrollView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

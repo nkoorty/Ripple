@@ -21,7 +21,7 @@ struct ExpenseView: View {
                 Text("$\(String(format: "%.2f", expense.amount))")
                     .bold()
                 
-                Text("\(String(format: "%.2f", expense.amount)) GHO")
+                Text("\(String(format: "%.2f", expense.amount*2.59)) XRP")
                     .font(.caption)
             }
         }
