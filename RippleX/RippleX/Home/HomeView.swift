@@ -19,17 +19,17 @@ struct HomeView: View {
                                 .foregroundStyle(.white.opacity(0.7))
                             
                             HStack {
-                                Text("£47.50")
+                                Text(settings.paidExpense ? "£0.00" : "£47.50")
                                     .font(.system(size: 32, weight: .bold))
                                 
                                 Spacer()
                                 
-                                Text("~122.89 XRP")
+                                Text(settings.paidExpense ? "0 XRP" : "~122.89 XRP")
                                     .font(.system(size: 18, weight: .regular))
                                     .foregroundStyle(.white.opacity(0.7))
                             }
                             
-                            (Text("in ") + Text("2 Groups").bold() + Text(" for ") + Text("9 Payments").bold() + Text(" in total"))
+                            (Text("in ") + Text("1 Group").bold() + Text(" for ") + Text("5 Payments").bold() + Text(" in total"))
                                 .font(.system(size: 16))
                         
                         }
@@ -41,17 +41,9 @@ struct HomeView: View {
                 .cornerRadius(20)
                 
                 Section {
-                    if settings.connectedMetaMask {
-                        ForEach(viewModel.groups1, id:\.id) { group in
-                            NavigationLink(destination: GroupOverview(group: group)) {
-                                GroupView(group: group)
-                            }
-                        }
-                    } else {
-                        ForEach(viewModel.groups, id:\.id) { group in
-                            NavigationLink(destination: GroupOverview(group: group)) {
-                                GroupView(group: group)
-                            }
+                    ForEach(viewModel.groups1, id:\.id) { group in
+                        NavigationLink(destination: GroupOverview(group: group)) {
+                            GroupView(group: group)
                         }
                     }
                 } header: {

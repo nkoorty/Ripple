@@ -20,25 +20,12 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack {
-                HStack {
-                    Image("ghoshare")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 40, height: 40)
-                        .cornerRadius(20)
-                    
-                    Text("RipSplit")
-                        .font(.system(size: 20, weight: .semibold))
-                    
-                    Spacer()
-                }
-                
                 Text("Payment Splitting Made Easy")
                     .font(.system(size: 30, weight: .bold))
                     .multilineTextAlignment(.center)
-                    .padding(.top, 12)
+                    .padding(.top, 8)
                 
-                Image("ghoshare")
+                Image("ripsplit")
                     .resizable()
                     .scaledToFit()
                     .cornerRadius(20)
@@ -143,8 +130,10 @@ struct LoginView: View {
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
                 // authentication has now completed
                 if success {
-                    UserDefaults.standard.set(true, forKey: "signin")
-                    settings.createdWallet = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        UserDefaults.standard.set(true, forKey: "signin")
+                        settings.createdWallet = true
+                    }
                 } else {
                     // there was a problem
                 }

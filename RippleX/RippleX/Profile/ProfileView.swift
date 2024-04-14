@@ -6,9 +6,7 @@ import Combine
 struct ProfileView: View {
     
     @ObservedObject var settings = Settings()
-    
-    let catData = [PetData(type: "cat", population: 30)]
-    
+        
     @ObservedObject var metaMaskSDK = MetaMaskSDK.shared(appMetadata)
     private static let appMetadata = AppMetadata(name: "Dub Dapp", url: "https://dubdapp.com")
 
@@ -19,36 +17,6 @@ struct ProfileView: View {
         NavigationView {
             List {
                 Section {
-                    ZStack(alignment: .bottomLeading) {
-                        Image("bg_aave_2")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 180)
-                            .clipped()
-                            .brightness(-0.5)
-                    
-                        
-                        VStack {
-                            ThinDonutChartView(data: catData)
-                                .overlay(
-                                    VStack {
-                                        Text("Borrow APY")
-                                            .font(.caption)
-                                        
-                                        Text("3.49%")
-                                            .font(.system(size: 22, weight: .bold))
-                                    }
-                                )
-                                .padding(20)
-                            Spacer()
-                        }
-                    }
-                }
-                .listRowBackground(Color.clear)
-                .listRowInsets(EdgeInsets())
-                
-                Section {
                     NavigationLink {
                     } label: {
                         HStack {
@@ -57,6 +25,7 @@ struct ProfileView: View {
                                 .scaledToFit()
                                 .frame(width: 26, height: 26)
                                 .cornerRadius(6)
+                                .padding(.trailing, 8)
                             
                             Text("Unlimit")
                                 .foregroundStyle(.white)
@@ -84,12 +53,12 @@ struct ProfileView: View {
                             
                             Spacer()
                             
-                            Text(settings.connectedMetaMask ? "Connected" : "Not Connected")
+                            Text(settings.connectedMetaMask ? "Not Connected" : "Connected")
                                 .foregroundStyle(.gray)
                         }
                     }
                     HStack(spacing: 16) {
-                        Image("nkoorty")
+                        Image("ripsplit")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 26, height: 26)
@@ -105,6 +74,9 @@ struct ProfileView: View {
                 } header: {
                     Text("Connections")
                 }
+                .headerProminence(.increased)
+                .listRowBackground(Color.clear)
+                .listRowInsets(EdgeInsets())
                 
                 Section {
                     NavigationLink {
@@ -138,10 +110,14 @@ struct ProfileView: View {
                 } header: {
                     Text("Settings")
                 }
+                .headerProminence(.increased)
+                .listRowBackground(Color.clear)
+                .listRowInsets(EdgeInsets())
                 
                 Section {
                     Button {
                         UserDefaults.standard.set(false, forKey: "signin")
+                        settings.connectedMetaMask = false
                     } label: {
                         Label("Log out", systemImage: "arrow.uturn.left")
                             .foregroundStyle(.red)
@@ -149,8 +125,11 @@ struct ProfileView: View {
                 } header: {
                     Text("Disconnect")
                 }
+                .headerProminence(.increased)
+                .listRowBackground(Color.clear)
+                .listRowInsets(EdgeInsets())
             }
-            .navigationTitle("Home")
+            .navigationTitle("Profile")
             .overlay(
                 ProfileImageView()
                     .padding(.trailing, 20)
@@ -178,33 +157,9 @@ struct ProfileView: View {
         .preferredColorScheme(.dark)
 }
 
-struct PetData {
-    let type: String
-    let population: Double
-}
-
-struct ThinDonutChartView: View {
-    var data: [PetData]
-    
-    var body: some View {
-        Chart {
-            ForEach(data, id: \.type) { dataItem in
-                SectorMark(
-                    angle: .value("Population", dataItem.population),
-                    innerRadius: .ratio(0.78), // Adjust this to change the thickness of the donut
-                    outerRadius: .ratio(1)
-                )
-                .foregroundStyle(.blue)
-            }
-        }
-        .frame(height: 140)
-        .chartLegend(.hidden)
-    }
-}
-
 struct ProfileImageView: View {
     var body: some View {
-        Image("icon")
+        Image("nkoorty")
             .resizable()
             .scaledToFit()
             .frame(width: 40, height: 40)
