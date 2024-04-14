@@ -1,7 +1,7 @@
 # RipSplit
 
 <p align="center">
-  <img src="https://github.com/nkoorty/Ripple/assets/22000925/453c4648-7969-4ad5-93f6-d6c9ecf8e8ac" width="25%">
+  <img src="https://github.com/nkoorty/Ripple/assets/22000925/b4ceb7d9-312a-41e6-87ca-8ae07222d333" width="25%">
 </p>
 
 
