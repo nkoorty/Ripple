@@ -25,8 +25,11 @@ RipSplit addresses these issues by facilitating direct, in-app settlements using
 # Workflow:
 
 <p align="center">
-  ![Group 12](https://github.com/nkoorty/Ripple/assets/22000925/672d89be-3c17-4933-89d0-50de8eec2550)
+
 </p>
+
+![Group 12](https://github.com/nkoorty/Ripple/assets/22000925/0f70eb50-31db-4d8f-948f-21653f501e0e)
+
 
 
 
