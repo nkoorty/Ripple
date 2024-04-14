@@ -44,6 +44,10 @@ Is the smart contract for the EIP 4337 smart accounts that incorporate account a
 #### AccountFactory.sol: [0xE08B3A7e9813d1c1781Bc1e8176bf13d0a5BfA50](https://evm-sidechain.xrpl.org/address/0xE08B3A7e9813d1c1781Bc1e8176bf13d0a5BfA50?tab=txs)
 The account factory contract uses `Create2` and `ERC1967Proxy` features from OpenZeppelin to facilitate the creation and management of upgradable `Account` instances. The factory uses an immutable template of the `Account` contract, initialised with a specific entry point, to deploy new account instances with unique salts and owner addresses. 
 
+#### Group.sol [0xEF63F82bE58DCfb96342E04DB0e553bA715de2Aa](https://evm-sidechain.xrpl.org/address/0xEF63F82bE58DCfb96342E04DB0e553bA715de2Aa)
+This contract manages the settlement groups and maps users names to smart account or wallet addresses. Function calls are used to display the information in app and are called in payment transactions. 
+
+
 
 
 # Future
