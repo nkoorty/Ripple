@@ -33,6 +33,7 @@ RipSplit addresses these issues by facilitating direct, in-app settlements using
 - FaceID is used to authenticate the transaction with turnkey used to generate a signer key. 
 - Users can also shake their phone to activate authentication of settling expenses.
 - Payments are handled using the `Account.sol` contract and funds can be off-ramped into fiat to the user.
+- Friends activity data is displayed using function calls from the contracts the `Group.sol` and `Account.sol` contracts.
 
 
 # Technical Documentation
