@@ -36,6 +36,17 @@ RipSplit addresses these issues by facilitating direct, in-app settlements using
 
 
 # Technical Documentation
+## Frontend
+<p align="center">
+  @RT @Chrizz
+</p>
+
+## Backend
+<p align="center">
+  @Adesh
+</p>
+
+## Contracts
 #### Account.sol: [0x70DF87FD59799c4e62829f066D4C59d08e56948f](https://evm-sidechain.xrpl.org/address/0x70DF87FD59799c4e62829f066D4C59d08e56948f)
 Is the smart contract for the EIP 4337 smart accounts that incorporate account abstraction with features such as upgradability, initialisation and session management  for multiple users. The contract allows for secure owner-only operations like withdrawals and updates and facilitates execution of both individual and batch transactions. It also logs activities through events for traceability. 
 
