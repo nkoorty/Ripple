@@ -7,7 +7,7 @@
 
 RipSplit is an iOS dApp built on the XRP EVM sidechain. It simplifies the process of splitting expenses and settling payments by using account abstraction and uses smart contracts to facilitate group management in a trustless and decentralised manner.
 
-Slides: https://www.canva.com/design/DAGCYKBdzaI/h1-fXzAMQQhjnSsZNM00iA/edit?utm_content=DAGCYKBdzaI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+[Slides](https://www.canva.com/design/DAGCYKBdzaI/h1-fXzAMQQhjnSsZNM00iA/edit?utm_content=DAGCYKBdzaI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Images
 <img src=https://github.com/nkoorty/Ripple/assets/80065244/6fd3432d-c2b2-4a2a-b323-85805244c4b7 width=16% >
