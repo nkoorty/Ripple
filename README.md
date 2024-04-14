@@ -25,9 +25,9 @@ RipSplit addresses these issues by facilitating direct, in-app settlements using
 # Workflow:
 
 <p align="center">
-  [Workflow Diagram]
-  https://www.figma.com/file/500rAeOuPjuVdLkSwBZSnf/Untitled?type=design&node-id=0-1&mode=design&t=BUVHnmrbzX5Mf3Jv-0
+  ![Group 12](https://github.com/nkoorty/Ripple/assets/22000925/672d89be-3c17-4933-89d0-50de8eec2550)
 </p>
+
 
 
 - The user can either connect an account using metamask or create a new account using smart accounts through account abstraction and Web3Auth as a non-custodial way of storing private keys.
